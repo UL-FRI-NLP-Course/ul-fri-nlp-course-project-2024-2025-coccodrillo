@@ -55,7 +55,7 @@ def get_articles(stringa, num_doc):
         return []
 
 
-l = get_articles("severe weather warning florence",3)
+l = get_articles("severe weather warning florence",4)
 print(l)
 
 

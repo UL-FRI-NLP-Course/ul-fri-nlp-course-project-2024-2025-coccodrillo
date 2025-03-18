@@ -1,0 +1,352 @@
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: 
+Location: 
+Reviews: 
+----------------------------------------
+Name: Da Enzo al 29
+Location: Trastevere
+Reviews: 4.4
+----------------------------------------
+Name: Sapori e Delizie
+Location: Monti
+Reviews: 4.5
+----------------------------------------
+Name: Tonnarello
+Location: Trastevere
+Reviews: 4.3
+----------------------------------------
+Name: Il Bocconcino
+Location: Aventino
+Reviews: 4.3
+----------------------------------------
+Name: Roscioli
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: Il Giardino Ristorante
+Location: Centro Storico
+Reviews: 4.7
+----------------------------------------
+Name: L’Archetto di Cavour
+Location: Monti
+Reviews: 4.2
+----------------------------------------
+Name: Sette Oche
+Location: Trastevere
+Reviews: 4.4
+----------------------------------------
+Name: Ciro Kebab Pizza
+Location: Casilino
+Reviews: 4.9
+----------------------------------------
+Name: Fraschetteria
+Location: Centro Storico
+Reviews: 4.8
+----------------------------------------
+Name: Pizzeria Da Mario
+Location: €€
+Reviews: 4.3
+----------------------------------------
+Name: Farina
+Location: Tiburtino
+Reviews: 5.0
+----------------------------------------
+Name: Osteria del Sostegno
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: La Casa del Tazza d’Oro
+Location: Centro Storico
+Reviews: 4.5
+----------------------------------------
+Name: Nerone
+Location: Termini
+Reviews: 4.7
+----------------------------------------
+Name: Ai Tre Scalini
+Location: Monti
+Reviews: 4.4
+----------------------------------------
+Name: Osteria Barberini
+Location: Centro Storico
+Reviews: 4.5
+----------------------------------------
+Name: Grazia & Graziella
+Location: Trastevere
+Reviews: 4.3
+----------------------------------------
+Name: Babette
+Location: Flaminio
+Reviews: 4.5
+----------------------------------------
+Name: Osteria Ancora Quà
+Location: Nomentano
+Reviews: 5.0
+----------------------------------------
+Name: I Magnifici
+Location: Nomentano
+Reviews: 4.5
+----------------------------------------
+Name: Brado
+Location: Appio San Giovanni
+Reviews: 5.0
+----------------------------------------
+Name: Agrodolce Roma
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: inCucina
+Location: €€
+Reviews: 4.5
+----------------------------------------
+Name: 44 Osteria Quarantaquattro
+Location: Termini
+Reviews: 4.5
+----------------------------------------
+Name: Colline Emiliane
+Location: Centro Storico
+Reviews: 4.4
+----------------------------------------
+Name: Pinsere
+Location: Termini
+Reviews: 4.7
+----------------------------------------
+Name: Mizio’s Street Food
+Location: Monti
+Reviews: 4.7
+----------------------------------------
+Name: L’Arrosticinaro
+Location: San Lorenzo
+Reviews: 5.0
+----------------------------------------
+Name: Rifugio Romano
+Location: Termini
+Reviews: 4.3
+----------------------------------------
+Name: Life
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: Gran Sasso
+Location: Nomentano
+Reviews: 4.7
+----------------------------------------
+Name: Interno 92
+Location: Prati
+Reviews: 4.6
+----------------------------------------
+Name: Angelino
+Location: Centro Storico
+Reviews: 4.5
+----------------------------------------
+Name: Old Chengdu
+Location: Termini
+Reviews: 4.5
+----------------------------------------
+Name: Osteria Pesce Fritto E Baccalà
+Location: San Lorenzo
+Reviews: 4.5
+----------------------------------------
+Name: Vulcano
+Location: Torpignattara
+Reviews: 4.1
+----------------------------------------
+Name: La Vecchia Locanda
+Location: Centro Storico
+Reviews: 4.6
+----------------------------------------
+Name: Cannavota
+Location: Esquilino
+Reviews: 4.4
+----------------------------------------
+Name: La Pesceria Barberini
+Location: Centro Storico
+Reviews: 4.7
+----------------------------------------
+Name: Casa Maria
+Location: Monti
+Reviews: 4.4
+----------------------------------------
+Name: Arlù
+Location: Prati
+Reviews: 4.4
+----------------------------------------
+Name: Santa Cristina al Quirinale
+Location: Centro Storico
+Reviews: 4.5
+----------------------------------------
+Name: Osteria St. Ana
+Location: Flaminio
+Reviews: 4.4
+----------------------------------------
+Name: Al Tinello d’Abruzzo
+Location: Nomentano
+Reviews: 5.0
+----------------------------------------
+Name: Cacio e Pepe
+Location: Prati
+Reviews: 4.3
+----------------------------------------
+Name: Piccolo Arancio
+Location: Centro Storico
+Reviews: 4.4
+----------------------------------------
+Name: Pizza In Trevi
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: Il Chianti
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: Hostaria Romana
+Location: Centro Storico
+Reviews: 4.2
+----------------------------------------
+Name: Luma
+Location: Prati
+Reviews: 4.6
+----------------------------------------
+Name: Su e Giu Cucina Romana
+Location: Prati
+Reviews: 4.6
+----------------------------------------
+Name: Origano Trevi
+Location: Centro Storico
+Reviews: 4.0
+----------------------------------------
+Name: L’Isola
+Location: Tuscolano
+Reviews: 4.9
+----------------------------------------
+Name: Le Virtù in Tavola Restaurant
+Location: Esquilino
+Reviews: 4.6
+----------------------------------------
+Name: Capranica
+Location: Centro Storico
+Reviews: 4.8
+----------------------------------------
+Name: Da Marco
+Location: Casilino
+Reviews: 4.3
+----------------------------------------
+Name: Sor Duilio
+Location: €€€
+Reviews: 4.0
+----------------------------------------
+Name: Sacco
+Location: San Giovanni
+Reviews: 4.1
+----------------------------------------
+Name: Tartufi & Friends
+Location: Centro Storico
+Reviews: 4.3
+----------------------------------------
+Name: Taverna Rossini
+Location: Parioli
+Reviews: 4.1
+----------------------------------------
+Name: Taverna Trilussa
+Location: Trastevere
+Reviews: 4.3
+----------------------------------------
+Name: Trattoria Dai Tre Amici Al Pantheon
+Location: Centro Storico
+Reviews: 4.4
+----------------------------------------
+Name: Il Porto di Ripetta
+Location: Flaminio
+Reviews: 4.7
+----------------------------------------
+Name: Cantina Cantarini
+Location: Termini
+Reviews: 4.5
+----------------------------------------
+Name: La Tavernaccia
+Location: Trastevere
+Reviews: 4.6
+----------------------------------------
+Name: Masto
+Location: Testaccio
+Reviews: 4.9
+----------------------------------------
+Name: La Mandrakata
+Location: Tiburtino
+Reviews: 3.9
+----------------------------------------
+Name: Sorpasso
+Location: Prati
+Reviews: 4.4
+----------------------------------------
+Name: Cantina dei Papi
+Location: Centro Storico
+Reviews: 4.7
+----------------------------------------
+Name: La Tavernetta 48
+Location: Centro Storico
+Reviews: 4.4
+----------------------------------------
+Name: Un Angolo Divino
+Location: Appio San Giovanni
+Reviews: 4.4
+----------------------------------------
+Name: Fabrica
+Location: Prati
+Reviews: 4.3
+----------------------------------------
+Name: Hostaria La Botticella
+Location: Trastevere
+Reviews: 4.5
+----------------------------------------
+Name: Ristorante del Giglio
+Location: Centro Storico
+Reviews: 4.4
+----------------------------------------
+Name: Dar Poeta
+Location: Trastevere
+Reviews: 4.4
+----------------------------------------
+Name: Alessio
+Location: Termini
+Reviews: 4.2
+----------------------------------------
+Name: Lo Schiaccianoci
+Location: €€
+Reviews: 4.7
+----------------------------------------

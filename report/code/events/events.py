@@ -106,14 +106,14 @@ gen = [
     'all-genres'
 ]
 
-start = "2025-03-17"
-end = "2025-03-27"
+start = "2025-03-20"
+end = "2025-03-21"
 citta = "Rome"
 
 
 geckodriver_path = "geckodriver"  
 options = Options()
-options.headless = True                     #true if not want see the browser
+options.headless = False                     #true if not want see the browser
 driver = webdriver.Firefox(options=options)
 
 web = "https://www.bandsintown.com/"
@@ -123,7 +123,7 @@ headers = {
 }
     
 
-pagina_html = naviga(web,citta,start,end,gen[4])
+pagina_html = naviga(web,citta,start,end,gen[-2])
 table = get_tables(pagina_html)
 events = get_events(table)
 fp = open("events.txt","w")

@@ -54,6 +54,6 @@ def download_acronimi():
 
 
 #in this moment work only with the italian transaltion
-get_paper("insert the name of country")
+get_paper("Francia")
 
 
