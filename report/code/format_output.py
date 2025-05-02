@@ -113,9 +113,9 @@ def format_event_data(city, city_data):
         location = event['Location']
 
         output+=(f"🎤 *{event_name}* - {singer}\n")
-        output+=(f"📅 Data e Ora: {date_and_time}\n")
+        output+=(f"📅 Date and Time: {date_and_time}\n")
         output+=(f"🏙️ Location: {location}\n")
-        output+=(f"📝 Descrizione: {description}\n")
+        output+=(f"📝 Description: {description}\n")
         output+=("—" * 40)
         output+="\n"
 
