@@ -255,3 +255,11 @@ def main(stringa):
 
 
 
+
+stringa = input("Insert your sentence: ")
+text,dix = main(stringa)
+print(text)
+print(diz)
+
+
+
