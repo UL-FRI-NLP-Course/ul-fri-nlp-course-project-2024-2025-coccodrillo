@@ -267,7 +267,7 @@ These tests helped identify and fix any weaknesses, improving the overall system
 
 Do you have suggestions, bugs to report, or want to contribute?
 
-👉 Open an issue or contact me directly on [GitHub](https://github.com/daivdebelcastro-sig) or [GitHub](...)
+👉 Open an issue or contact me directly on [Davide GitHub](https://github.com/davidebelcastro-sig) or [Ondrej GitHub](https://github.com/pritelo)
 
 ---
 	 
