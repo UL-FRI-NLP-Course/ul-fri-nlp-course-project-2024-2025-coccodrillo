@@ -297,20 +297,93 @@ While the system is robust and flexible, it has some technical limitations that 
 
 ---
 
-## 📌 Example Use Case
+### **User:**  
+*I would like to go in Rome for 3 days, can you reccomend for me the best things to visit?  Start to Termini Station*  
 
-**User:**  
-*What can I visit in Barcelona for 2 days?*
-
-**System Response:**  
-1. Recognizes the intent → `places to visit`  
-2. Extracts the city `Barcelona` and the number of days `2 days`  
-3. Generates an **introductory sentence** using language generation models  
-4. Asks (optional) for a starting point.
-5. Provides a list of main attractions based on **beauty, distance, and estimated visit time**  
+**Output**  
+<p align="center">
+  <img src="images/place_rome.png" width="85%" alt="Rome places to visit">
+</p>
 
 ---
 
+### **User:**  
+*Hello, can you say me the current situation about the security in France, is safe?*  
+
+**Output**  
+<p align="center">
+  <img src="images/news_france.png" width="85%" alt="News France doc1">
+</p>
+<p align="center">
+  <img src="images/news_france2.png" width="85%" alt="News France doc2">
+</p>
+
+
+---
+
+### **User:**  
+*Tell me the last news about the warning weather alert in Valencia.*  
+
+**Output**  
+<p align="center">
+  <img src="images/news_valencia.png" width="85%" alt="News Valencia">
+</p>
+
+---
+
+### **User:**  
+*Some concerts in Ljubljana for tomorrow.*  
+
+**Output**  
+<p align="center">
+  <img src="images/events_lubiana.png" width="85%" alt="Events in Lubiana">
+</p>
+
+---
+
+### **User:**  
+*I am going in Milan in the 1 June, there are concert by Jerry Cantrell?*  
+
+**Output**  
+<p align="center">
+  <img src="images/events_milan.png" width="85%" alt="Events in Milan">
+</p>
+
+---
+
+### **User:**  
+*Can you write for me the best places where i can eat in Prague*  
+
+**Output**  
+<p align="center">
+  <img src="images/restaurants_prague.png" width="85%" alt="Restaurants in Prague">
+</p>
+
+---
+
+### **User:**  
+*What are the typical food in Naples? and in Paris?*  
+
+**Output**  
+<p align="center">
+  <img src="images/food_naples.png" width="85%" alt="Naples food">
+</p>
+<p align="center">
+  <img src="images/food_paris.png" width="85%" alt="Paris food">
+</p>
+
+
+---
+
+### **User:**  
+*I am going in Berlin, tell me the temperature for friday.*  
+
+**Output**  
+<p align="center">
+  <img src="images/temperature_berlin.png" width="85%" alt="Temperature Berlin">
+</p>
+
+---
 ## 🔧 Technologies Used
 
 - **Language:** Python `3.10+`
