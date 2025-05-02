@@ -3,7 +3,7 @@ Testing 01/05/2025
 
 I would like to go in Rome for 3 days, can you reccomend for me the best things to visit?  Start to Termini Station
 Greetings, providing the information about places to visit you asked for recently.
-{'Rome': ([('Museo Nazionale Romano: Palazzo Massimo alle Terme', '1'), ('Basilica di Santa Maria Maggiore', '1'), ('Colosseum', '1'), ('Roman Forum', '1'), ('Pantheon', '1'), ('Piazza Navona', '1'), ('Villa Farnesina', '1'), ("Castel Sant'Angelo", '1'), ("St Peter's Basilica", '1'), ('Vatican Gardens', '1'), ('Sistine Chapel', '0'), ('Vatican Museums', '1'), ('Gianicolo', '1'), ('Basilica di Santa Maria in Trastevere', '1'), ('Jewish Ghetto', '1'), ("Campo de' Fiori", '1'), ('Trevi Fountain', '1'), ('Galleria Doria Pamphilj', '1'), ('Piazza di Spagna', '1'), ('Pincio Hill Gardens', '1'), ('Museo e Galleria Borghese', '1'), ('Museo della Repubblica Romana e della Memoria Garibaldina', '1')], 22.976107645200745)}
+{'Rome': ([('Museo Nazionale Romano: Palazzo Massimo alle Terme', '1'), ('Basilica di Santa Maria Maggiore', '1'), ('Colosseum', '1'), ('Roman Forum', '1'), ('Pantheon', '1'), ('Piazza Navona', '1'), ('Villa Farnesina', '1'), ("Castel Sant'Angelo", '1'), ("St Peter's Basilica", '1'), ('Vatican Gardens', '1'), ('Sistine Chapel', '0'), ('Vatican Museums', '1'), ('Gianicolo', '1'),('Museo della Repubblica Romana e della Memoria Garibaldina', '1'), ('Basilica di Santa Maria in Trastevere', '1'), ('Jewish Ghetto', '1'), ("Campo de' Fiori", '1'), ('Trevi Fountain', '1'), ('Galleria Doria Pamphilj', '1'), ('Piazza di Spagna', '1'), ('Pincio Hill Gardens', '1'), ('Museo e Galleria Borghese', '1')], 22.976107645200745)}
 
 
 Hello, can you say me the current situation about the security in France, is safe?
