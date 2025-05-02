@@ -300,11 +300,11 @@ While the system is robust and flexible, it has some technical limitations that 
 ## 📌 Example Use Case
 
 **User:**  
-*What can I visit in Barcelona next weekend?*
+*What can I visit in Barcelona for 2 days?*
 
 **System Response:**  
 1. Recognizes the intent → `places to visit`  
-2. Extracts the city `Barcelona` and the date `next weekend`  
+2. Extracts the city `Barcelona` and the number of days `2 days`  
 3. Generates an **introductory sentence** using language generation models  
 4. Asks (optional) for a starting point.
 5. Provides a list of main attractions based on **beauty, distance, and estimated visit time**  
