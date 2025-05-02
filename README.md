@@ -297,6 +297,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 ---
 
+## 📌 Examples (Testing 01/05/2025)
 ### **User:**  
 *I would like to go in Rome for 3 days, can you reccomend for me the best things to visit?  Start to Termini Station*  
 
