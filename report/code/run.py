@@ -20,7 +20,6 @@ import create_text
 sentence = ""
 metadata = None
 
-
 def change_time(stringa):
     date_obj = datetime.strptime(stringa, "%d/%m/%Y")
     date_with_time = date_obj.replace(hour=8, minute=0, second=0)
@@ -59,10 +58,14 @@ def get_intent2():
                 nodo_start = 0
             place,name,hours = create_graph_place.run(city.lower(),importance_time_visit,importance_beauty,importance_edge,nodo_start,n_day)
             places = [name[i] for i in place]
-            diz[city] = places
+            diz[city] = (places,hours)
+
     for city,values in diz.items():
-        places_new = search_close.run_vector(values)
-        diz[city] = places_new
+        h = values[1]
+        places = values[0]
+        places_new = search_close.run_vector(places)
+        diz[city] = (places_new,h)
+
     return diz
 
 
@@ -257,9 +260,8 @@ def main(stringa):
 
 
 stringa = input("Insert your sentence: ")
-text,dix = main(stringa)
+text,diz = main(stringa)
 print(text)
 print(diz)
-
 
 
