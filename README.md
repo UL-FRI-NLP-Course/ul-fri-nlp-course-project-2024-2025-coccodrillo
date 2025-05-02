@@ -125,32 +125,118 @@ Only articles with similarity above a predefined threshold are included in the r
 
 ---
 
-### 🗺️ Custom Travel Recommendations
+
+## ✨ Custom Travel Recommendations
 
 The system constructs a **graph of places to visit**:
 
-- **Nodes** = points of interest (tourist attractions, monuments, museums, etc.)
-- **Edges** = distances between places
-- Each node has two weights:
-  - **Beauty of the place**
-  - **Estimated visit time**
+- 🏛️ **Nodes** = Points of interest (museums, landmarks, squares, etc.)
+- 📏 **Edges** = Walking distances between each location
+- Each node includes two weights:
+  - 🎨 **Beauty**: a value representing how iconic or scenic the place is
+  - ⏱️ **Visit time**: estimated duration needed to explore the location
 
-#### 🔍 Optimizing the Route
+---
 
-- The system calculates the optimal route using a **minimum-cost algorithm**, which considers:
-  - **Beauty of the place**
-  - **Duration of the visit**
-  - **Distance between places**
+## 🔍 Route Optimization
 
-- It is assumed the user has **8 hours per day** available for sightseeing.
+The route is selected using a **minimum-cost algorithm**, which balances:
 
-### Availability:
-- For each location, the system checks the availability via **Google Maps**, ensuring the site is open on the specified day (e.g., avoiding temporarily closed or under-construction locations).
+- 🎨 Beauty of the place (highly weighted)
+- 🚶 Walking distance (moderately weighted)
+- ⌛ Visit duration (low or no weight)
 
-#### Example:
-> If the user stays in Rome for 3 days → 8h x 3 = 24h  
-> The system selects the **k best places** where the total of visit times and walking distances does not exceed 24 hours.
-> The starting point of the route is chosen by the user.
+It assumes the user has **8 hours per day** for sightseeing, and ensures the full itinerary respects the time constraints (e.g., 3 days × 8h = 24h).
+
+The system also uses **Google Maps availability data** to:
+- ✅ Include only locations that are open on the selected days
+- ❌ Exclude places temporarily closed or under renovation
+
+---
+
+## 💬 Example Query
+
+> _"I would like to go to Rome for 3 days. Can you recommend the best things to visit? Start from Termini Station."_
+
+With the following configuration:
+```python
+importance_time_visit = 0.0
+importance_beauty     = 0.7
+importance_edge       = 0.3
+```
+
+The output is:
+```python
+{
+  'Rome': ([
+    ('Museo Nazionale Romano: Palazzo Massimo alle Terme', '1'),
+    ('Basilica di Santa Maria Maggiore', '1'),
+    ('Colosseum', '1'),
+    ('Roman Forum', '1'),
+    ('Pantheon', '1'),
+    ('Piazza Navona', '1'),
+    ('Villa Farnesina', '1'),
+    ("Castel Sant'Angelo", '1'),
+    ("St Peter's Basilica", '1'),
+    ('Vatican Gardens', '1'),
+    ('Sistine Chapel', '0'),  # ← marked as closed
+    ('Vatican Museums', '1'),
+    ('Gianicolo', '1'),
+    ('Museo della Repubblica Romana e della Memoria Garibaldina', '1'),
+    ('Basilica di Santa Maria in Trastevere', '1'),
+    ('Jewish Ghetto', '1'),
+    ("Campo de' Fiori", '1'),
+    ('Trevi Fountain', '1'),
+    ('Galleria Doria Pamphilj', '1'),
+    ('Piazza di Spagna', '1'),
+    ('Pincio Hill Gardens', '1'),
+    ('Museo e Galleria Borghese', '1')
+  ], 23)
+}
+```
+---
+
+## 🕒 Time & Availability
+
+- **Total time used**: ~23 hours  
+- 🚫 **Closed location excluded**: *Sistine Chapel* (temporarily closed)
+
+---
+
+## 🖼️ Visual Itinerary
+
+Below is the optimized travel route drawn on a map.  
+Each segment is **color-coded** based on the order of visitation (earliest to latest).
+
+<p align="center">
+  <img src="example_path_rome.png" width="85%" alt="Optimized itinerary map for Rome">
+</p>
+
+---
+
+## ⚙️ How It Works
+
+### 🔧 Input
+- 🏙️ City: _Rome_  
+- 📅 Number of days  
+- 📍 Starting location (e.g., Termini Station)
+
+### 🧠 Process
+- Constructs a **weighted graph** of attractions  
+- Filters out **temporarily closed** or inaccessible sites  
+- Runs a **route optimization algorithm** with custom weights:
+  - 🎨 Beauty of each place
+  - ⌛ Visit time
+  - 🚶 Walking distance  
+- Computes total estimated time  
+- Generates a **visual map** of the itinerary
+
+### 📦 Output
+- ✅ A **sorted list** of recommended places to visit  
+- ⏳ Estimated **total visit time**  
+- 🗺️ A **visual path** connecting all selected locations
+
+---
 
 ### 🎫 Events and Concerts
 
