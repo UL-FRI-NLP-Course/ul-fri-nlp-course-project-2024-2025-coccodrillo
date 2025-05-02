@@ -15,6 +15,7 @@ import travel
 from places import search_close
 from places import get_geo
 import create_text
+import format_output
 
 
 sentence = ""
@@ -252,7 +253,7 @@ def main(stringa):
     #print(metadata)
     #print(idx_intent)
     diz = intent_mapping.get(idx_intent, get_intent2)()   #devo mettere un timeout anche qui
-    return text,diz
+    return text,diz,idx_intent
     print(text)
     print(diz)
 
@@ -260,8 +261,9 @@ def main(stringa):
 
 
 stringa = input("Insert your sentence: ")
-text,diz = main(stringa)
+text,diz,id = main(stringa)
 print(text)
-print(diz)
+final_output = format_output.get(diz,int(id))
+print(final_output)
 
 
