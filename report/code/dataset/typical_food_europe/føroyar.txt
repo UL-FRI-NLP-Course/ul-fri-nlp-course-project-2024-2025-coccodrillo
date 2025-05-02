@@ -1,0 +1,15 @@
+name=Garnatálg
+location=N/A
+review=n/a
+food_type=Sausages
+description=Hailing from the Faroe Islands, garnatálg is a specialty prepared with cured sheep intestines and sheep tallow. The combination is shaped into large, oval pieces which are then air-dried. This local product is usually cut into slices, pan-fried until melted and served overræstur fiskur—air-dried and fermented fish.
+name=Heimablídni
+location=N/A
+review=n/a
+food_type=Feasts
+description=Heimablídni is a Faroese tradition where guests pay to experience traditional meals in local people's homes. The word itself meanshome hospitalityand refers to authentic and intimate dining experiences – local food that's combined with interesting stories about the village where heimablídni is held.As a part of the feast, guests can try local delicacies such asskærpikjøt(dried sheep), dried (ræst) cod, whale blubber, sliced whale meat, and vegetables such as carrots, kohlrabi, broccoli, rhubarb, and potatoes. And if luck is on your side, you might even get a taste of local schnapps served out of a lamb's horn!
+name=Skerpikjøt
+location=N/A
+review=n/a
+food_type=cured-mutton
+description=This specialty of the Faroe Islands emerged as a meat preserving technique.Skerpikjøt, or semi-fermented mutton meat, is prepared by wind-drying sheep's legs in the so-calledhjallur, a typical Faroese outdoor shed with half-open, slatted sides.The cold island climate and salty air impart a particularly tangy flavor to the meat, making it incomparable to similar cured meats. As a popular breakfast choice among locals, skerpikjøt is typically enjoyed with toasted sourdough bread, sprinkled with coarse salt.

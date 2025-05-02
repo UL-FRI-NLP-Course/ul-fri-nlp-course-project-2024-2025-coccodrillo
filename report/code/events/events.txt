@@ -1,33 +1,40 @@
+Singer: Ultimo
 Event Name: Hand Of The Tribe
 Description: Kill Joy
 Date and Time: Mar 20 - 7:00 PM
 Location: Via Appia NuovaRoma, Italy
 ----------------------------------------
+Singer: Ultim
 Event Name: The Musical Box
 Description: Sala Petrassi
 Date and Time: Mar 20 - 9:00 PM
 Location: Via Pietro de Coubertin 30Roma, Italy
 ----------------------------------------
+Singer: Ultio
 Event Name: The Niro
 Description: Quid
 Date and Time: Mar 20 - 9:15 PM
 Location: Via Assisi, 117Rome, Italy
 ----------------------------------------
+Singer: Ultim
 Event Name: Doogie White
 Description: Kill Joy
 Date and Time: Mar 20 - 9:30 PM
 Location: Via Appia NuovaRoma, Italy
 ----------------------------------------
+Singer: Ultim
 Event Name: Failed
 Description: C.S.A. Intifada
 Date and Time: Mar 21 - 8:30 PM
 Location: Via di Casal Bruciato, 15Rome, Italy
 ----------------------------------------
+Singer: Ultimo
 Event Name: Dead Blow Hammer
 Description: C.S.A. Intifada
 Date and Time: Mar 21 - 8:30 PM
 Location: Via di Casal Bruciato, 15Rome, Italy
 ----------------------------------------
+Singer: Ultim
 Event Name: Pia Tuccitto
 Description: Kill Joy
 Date and Time: Mar 21 - 9:30 PM

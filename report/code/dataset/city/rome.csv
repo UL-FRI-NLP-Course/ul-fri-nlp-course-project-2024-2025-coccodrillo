@@ -1,0 +1,160 @@
+place,ranking,lat,long,duration(h)
+Colosseum,1,41.8902,12.4922,1
+Roman Forum,2,41.8925,12.4853,1
+Vatican Museums,3,41.9065,12.4534,2
+St Peter's Basilica,4,41.9022,12.4534,1.5
+Pantheon,5,41.8986,12.4769,1
+Piazza Navona,6,41.8980,12.4731,1
+Museo e Galleria Borghese,7,41.9145,12.4925,2
+Basilica di San Giovanni in Laterano,8,41.8854,12.5084,1.5
+Trevi Fountain,9,41.9009,12.4813,0.5
+Basilica di Santa Maria Maggiore,10,41.8954,12.5011,1
+Museo Nazionale Romano: Palazzo Massimo alle Terme,11,41.9023,12.4972,1
+Castel Sant'Angelo,12,41.9029,12.4673,1
+Piazza di Spagna,14,41.9059,12.4828,0.5
+Villa Farnesina,15,41.9003,12.4700,1
+Basilica di Santa Maria in Trastevere,16,41.8887,12.4665,1
+Vatican Gardens,17,41.9023,12.4531,1.5
+Sistine Chapel,24,41.9029,12.4534,1
+Jewish Ghetto,26,41.8935,12.4752,1
+Gianicolo,34,41.8882,12.4602,1
+Campo de' Fiori,39,41.8945,12.4730,0.5
+Villa Borghese,50,41.9145,12.4923,2
+Basilica di San Pietro in Vincoli,57,41.8860,12.4841,0.5
+Galleria Doria Pamphilj,60,41.9024,12.4820,1
+Pincio Hill Gardens,69,41.9092,12.4769,0.5
+Gallerie Nazionali: Palazzo Barberini,83,41.9070,12.4916,1
+Terme di Caracalla,89,41.8800,12.4939,1
+Chiesa di Sant’Ignazio di Loyola,93,41.8997,12.4823,0.5
+Basilica di San Clemente,99,41.8864,12.4887,0.5
+Museo Nazionale Etrusco di Villa Giulia,138,41.9151,12.4709,1
+Quartiere Coppedè,155,41.9186,12.4802,1
+Galleria Corsini,156,41.8926,12.4634,1
+Basilica di Santa Cecilia in Trastevere,178,41.8879,12.4674,0.5
+Domus Aurea,313,41.8881,12.4934,1
+Museo dell'Ara Pacis,316,41.9054,12.4683,1
+St Peter's Square,351,41.9022,12.4534,0.5
+Villa Medici,356,41.9131,12.4817,1
+Via Giulia,361,41.8972,12.4602,0.5
+Museo Nazionale Romano: Palazzo Altemps,379,41.9062,12.4760,1
+Auditorium Parco della Musica,398,41.9196,12.4712,1
+Chiesa del Gesù,400,41.8962,12.4767,0.5
+Villa Doria Pamphilj,423,41.8836,12.4635,1
+Piazza di Santa Maria in Trastevere,436,41.8867,12.4693,0.5
+Villa Celimontana,438,41.8829,12.4922,1
+Palazzo Colonna,442,41.9025,12.4807,0.5
+Museo Nazionale Romano: Terme di Diocleziano,446,41.9077,12.4944,1
+St Peter’s Basilica Dome,491,41.9024,12.4534,0.5
+Colonna di Marco Aurelio,504,41.9029,12.4814,0.5
+Porta San Paolo,514,41.8673,12.4792,0.5
+Ponte Sant’Angelo,523,41.9029,12.4669,0.5
+Roseto Comunale,536,41.8896,12.4749,0.5
+Dorothy Circus Gallery,538,41.9075,12.4672,0.5
+Villa Sciarra,542,41.8900,12.4695,0.5
+Basilica di Santa Maria Sopra Minerva,549,41.8964,12.4741,0.5
+Basilica dei SS Quattro Coronati,559,41.8844,12.5045,0.5
+Keats-Shelley House,570,41.9026,12.4799,0.5
+Musei di Villa Torlonia,573,41.9140,12.5091,1
+Chiesa di Santa Maria dei Miracoli,578,41.9076,12.4711,0.5
+Basilica di Santa Prassede,584,41.8944,12.4959,0.5
+Basilica di Sant’Agostino,588,41.9026,12.4713,0.5
+Palazzo del Quirinale,595,41.8978,12.4812,1
+Convento dei Cappuccini,640,41.9073,12.4919,0.5
+Piazza del Popolo,650,41.9125,12.4768,0.5
+Chiesa di San Francesco d’Assisi a Ripa Grande,652,41.8865,12.4691,0.5
+Chiesa di Santa Maria della Pace & Chiostro del Bramante,654,41.9041,12.4707,0.5
+Orto Botanico,655,41.8912,12.4682,1
+Chiesa di Santi Vincenzo e Anastasio,658,41.8940,12.4742,0.5
+Palazzo Spada,662,41.8924,12.4755,0.5
+Palazzo Farnese,664,41.8952,12.4737,0.5
+Chiesa Nuova,670,41.8999,12.4754,0.5
+Isola Tiberina,680,41.8899,12.4721,0.5
+Museo Ebraico di Roma,681,41.8931,12.4730,0.5
+Foro Italico,689,41.9382,12.4669,1
+Palazzo della Cancelleria,695,41.8978,12.4749,0.5
+Villa del Priorato di Malta,704,41.8887,12.4726,0.5
+Mausoleo di Augusto,709,41.9133,12.4756,0.5
+Triumphs & Laments,716,41.8924,12.4772,0.5
+Basilica dei Santi Apostoli,743,41.8982,12.4753,0.5
+Fontana delle Tartarughe,748,41.8968,12.4749,0.5
+Chiesa di San Gregorio al Celio,754,41.8839,12.4920,0.5
+Galleria Sciarra,771,41.8982,12.4707,0.5
+Tomb of St Peter,775,41.9022,12.4534,1
+Chiesa di Sant’Andrea della Valle,783,41.8993,12.4760,0.5
+Le Domus Romane di Palazzo Valentini,786,41.8986,12.4744,1
+Chiesa di San Martino ai Monti,791,41.8971,12.4930,0.5
+Piazza Colonna,810,41.9026,12.4757,0.5
+Chiesa di Sant’Andrea al Quirinale,814,41.9041,12.4863,0.5
+Fontana dei Quattro Fiumi,819,41.8976,12.4733,0.5
+Fontana dell’Acqua Paola,828,41.8867,12.4780,0.5
+Chiesa di Santa Croce in Gerusalemme,829,41.8857,12.5155,0.5
+Santuario della Scala Santa & Sancta Sanctorum,844,41.8844,12.5145,0.5
+Palazzo delle Esposizioni,848,41.9024,12.4850,0.5
+Sant'Onofrio,858,41.8980,12.4705,0.5
+Via Vittorio Veneto,865,41.9073,12.4790,0.5
+Villa Torlonia,867,41.9143,12.5096,1
+MAXXI,878,41.9334,12.4602,1
+Chiesa di Santo Stefano Rotondo,880,41.8840,12.4979,0.5
+Chiesa di San Carlino alle Quattro Fontane,884,41.9017,12.4853,0.5
+Museo d’Arte Contemporanea di Roma,893,41.9116,12.4783,1
+Monte Testaccio,910,41.8775,12.4703,0.5
+Città dell’Acqua,918,41.9130,12.4933,0.5
+Chiesa di Sant’Ivo alla Sapienza,921,41.9027,12.4766,0.5
+Piazza Vittorio Emanuele II,926,41.8905,12.5077,0.5
+Palazzo Merulana,933,41.8953,12.4914,0.5
+Catacombe di Priscilla,965,41.9304,12.5032,1
+Museo di Roma,977,41.8969,12.4744,1
+Stumbling Stones,982,41.8982,12.4738,0.5
+Chiesa della Trinità dei Monti,985,41.9100,12.4810,0.5
+Museo Storico della Liberazione,989,41.9053,12.4696,0.5
+Pasquino,992,41.8986,12.4725,0.5
+Ponte Milvio,999,41.9310,12.4629,0.5
+Palazzo Laterano,1001,41.8884,12.5100,0.5
+Villa Torlonia Bunker,1008,41.9131,12.5097,0.5
+Porta Settimiana,1011,41.8923,12.4671,0.5
+Basilica di San Nicola in Carcere,1012,41.8962,12.4755,0.5
+Villa Aldobrandini,1032,41.8975,12.4852,0.5
+Palazzo di Montecitorio,1036,41.9029,12.4769,0.5
+Casa di Goethe,1041,41.9067,12.4770,0.5
+Piazza del Quirinale,1047,41.8966,12.4814,0.5
+Basilica di San Lorenzo in Lucina,1053,41.9010,12.4758,0.5
+Via del Governo Vecchio,1054,41.8981,12.4705,0.5
+Case Romane,1071,41.9023,12.4810,1
+Gagosian Gallery,1091,41.9062,12.4806,0.5
+Teatro di Marcello,1108,41.8943,12.4754,0.5
+Fontana delle Naiadi,1137,41.9028,12.4919,0.5
+Palazzo Cenci,1142,41.8955,12.4736,0.5
+Chiesa Dio Padre Misericordioso,1149,41.8873,12.5041,0.5
+Portico d'Ottavia,1153,41.8928,12.4760,0.5
+Elefantino,1157,41.8940,12.4743,0.5
+Piazza Trilussa,1170,41.8941,12.4722,0.5
+Chiesa di San Bartolomeo,1220,41.8871,12.4731,0.5
+Palazzo Madama,1236,41.9000,12.4767,0.5
+Museo Criminologico,1241,41.8949,12.4758,0.5
+Basilica di San Giovanni Battista dei Fiorentini,1250,41.9010,12.4737,0.5
+Fondazione Pastificio Cerere,1252,41.9026,12.4850,0.5
+Museo Barracco di Scultura Antica,1260,41.9029,12.4857,0.5
+Chiesa di Sant'Agnese in Agone,1289,41.8993,12.4756,0.5
+Piramide di Caio Cestio,1305,41.8775,12.4713,0.5
+Piè di Marmo,1317,41.8920,12.4745,0.5
+Palazzo Pamphilj,1329,41.9013,12.4800,0.5
+Mattatoio,1336,41.8901,12.4690,0.5
+Museo Napoleonico,1345,41.9058,12.4754,0.5
+Porta Pia,1348,41.8972,12.5106,0.5
+Piazza della Repubblica,1361,41.9020,12.4970,0.5
+Via dei Coronari,1384,41.8994,12.4717,0.5
+Museo di Roma in Trastevere,1416,41.8949,12.4704,0.5
+Torre degli Anguillara,1440,41.8866,12.4668,0.5
+Via dei Condotti,1469,41.9022,12.4817,0.5
+Stadio di Domiziano,1471,41.8957,12.4735,0.5
+Piazza Barberini,1489,41.9025,12.4920,0.5
+Museo Nazionale Romano: Crypta Balbi,1508,41.8950,12.4752,0.5
+Porta Maggiore,1526,41.8929,12.5147,0.5
+Museo Nazionale degli Strumenti,1548,41.8952,12.4787,0.5
+Museo Storico Artistico,1555,41.8957,12.4735,0.5
+Basilica di San Lorenzo in Damaso,1567,41.9015,12.4792,0.5
+Giardino degli Aranci,1573,41.8853,12.4705,0.5
+Garibaldi Monument,1594,41.8887,12.4730,0.5
+Fontana delle Rane,1605,41.9019,12.4729,0.5
+Chiesa di Santa Lucia in Selci,1606,41.8956,12.4746,0.5
+Museo della Repubblica Romana e della Memoria Garibaldina,1647,41.8970,12.4704,0.5

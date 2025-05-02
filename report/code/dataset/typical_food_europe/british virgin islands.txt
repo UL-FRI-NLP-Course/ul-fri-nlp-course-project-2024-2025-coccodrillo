@@ -1,0 +1,10 @@
+name=Fish and Fungi
+location=N/A
+review=n/a
+food_type=saltwater-fish-dishes
+description=Dating back to the times of slavery, when the law allowed each slave to have six quarts of cornmeal and six salted herrings weekly, fish and fungi remained a staple food of the British Virgin Islands and is the islands' national dish. Fungi, also spelledfungeeand pronounced "foon-gee", are not mushrooms, but okra cooked into a thick mash with the addition of cornmeal and water.The fresh, whole fish is seasoned with a Creole-style seasoning and fried until it develops a typical crispiness. After it's fried, the fish is topped with a sweet onion gravy. Fungi and fried fish are served on the same plate, piping hot and ready to be consumed.Although it is not a fancy dish, it is a must-try should you find yourself in the British Virgin Islands.
+name=Painkiller
+location=N/A
+review=n/a
+food_type=cocktails
+description=Painkilleris a rum-based tropical cocktail first made at the Soggy Dollar Bar in the British Virgin Islands. It was created in 1971 by Daphne Henderson, and sometime in the 1980s, Pusser's Rum went to trademark the recipe. Painkiller combines dark or navy rum, most recipes will use Pusser's Rum, fresh pineapple juice, orange juice, and cream of coconut. The ingredients are shaken with ice, and the combination is then strained into chilled glasses.This cocktail is served in tiki glasses or optionally in a tall collins glass filled with ice. It is usually garnished with a pineapple wedge and freshly grated nutmeg.

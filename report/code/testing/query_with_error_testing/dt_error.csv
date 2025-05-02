@@ -1,0 +1,99 @@
+"Is it safe to travel right now?";non sappiamo dove quindi devo dirgli che non so la città
+"Any updates on local safety?";non sappiamo dove quindi devo dirgli che non so la città
+"What's the latest on the security situation?";non sappiamo dove quindi devo dirgli che non so la città
+"Are there any safety concerns in the area?";non sappiamo dove quindi devo dirgli che non so la città
+"Tell me about current security conditions."; sappiamo dove quindi devo dirgli che non so la città
+"Is it safe to visit Parig at the moment?";devo ritornare ok c'è la citta e faccio vedere che c'è un piccolo controllo degli errori
+"What’s the security situation in Berin?";devo ritornare ok c'è la citta e faccio vedere che c'è un piccolo controllo degli errori
+"Amsterdam last news about the security";devo ritornare ok c'è la citta
+"Are there any ongoing security issues in Zurich?";devo ritornare ok c'è la citta
+"Are there any weather alerts today?";non sappiamo dove quindi devo dirgli che non so la città
+"Should I expect severe weather soon?";non sappiamo dove quindi devo dirgli che non so la città
+"Is there a storm warning?"; non sappiamo dove quindi devo dirgli che non so la città
+"Any meteorological warnings in effect?";non sappiamo dove quindi devo dirgli che non so la città
+"What are the current weather warnings?";non sappiamo dove quindi devo dirgli che non so la città
+"Any weather alerts in London this week?";ok
+"Are there any heavy storms expected in Rome?";ok
+"Are there any hurricane warnings in Barcelon?";ok con congrollo errori
+"Weather-related disasters in Florence; updates and latest news.";ok
+"Can you suggest tourist attractions in Paris?";ok
+"What are must-see places in Rome?";ok
+"Where should I go if I visit Milano?";ok con controllo errori
+"Best spots to explore in Barcelona?";ok
+"What are the top sights in London?";ok 
+"Where can I go for monuments?";non sappiamo dove quindi devo dirgli che non so la città
+"What are the best places to visit in Madrid?";ok
+"Can you recommend some landmarks in Amsterdam?";ok
+"What are the most famous attractions?";non sappiamo dove quindi devo dirgli che non so la città
+"Where should I visit?";non sappiamo dove quindi devo dirgli che non so la città
+"What are the best tourist destinations in Zurich?";ok
+"What’s worth seeing in Prague?";ok
+"Tell me about the famous attractions in Lisbon?";ok
+"Where can I go for visit Paris?";ok
+"What are the best museums?";non sappiamo dove quindi devo dirgli che non so la città
+"Best things to visit in Naples for 1 day";ok
+"Tell me the best things to visit in Rome for 5 days";ok
+"Send me a complete path about the most beautiful places to visit in Prague.";ok
+"What concerts are happening this week?";non so dove; so il periodo ma non il luogo
+"Are there events in the Rome this weekend?";ok ho luogo e periodo
+"Tell me about upcoming festivals.";non so luogo e periodo
+"Is there a music event soon?";non so luogo e periodo
+"Any local cultural events?";non so luogo e periodo
+"What music festivals are taking place in Paris todai?";ok con controllo errori
+"Are there any concerts in London this wekend?";ok con controllo errori
+"When is the next art exhibition in Milan?";non so quando
+"Can you tell me about the upcoming jazz festival in Vienna?";non so quando
+"What events are scheduled for this week in Berlin?";ok
+"Are there any theater shows in Rome this weekend?";ok
+"Concert by Ultimo in Rome today";ok
+"Concert rock in Milan tomorow";ok con controllo errori
+"What are the top-rated restaurants nearby?";dove?
+"Where can I get the best food here?";dove?
+"Any suggestions for great places to eat?";dove?
+"Which restaurant is the most recommended?";dove?
+"Can you suggest a fancy restaurant in Rome?";ok
+"Where should I go for a good dinner tonight?";dove?
+"Is there a top-reviewed restaurant near me?";dove?
+"Where can I find high-end restaurants in Milan?";ok
+"Suggest a budget-friendly restaurant in London.";ok
+"What restaurant is trending in Prague";ok
+"Any 5-star restaurants open now?";dove?
+"Tell me the best place where i can eat in Naples";ok
+"What traditional food should I try in Spain?";ok
+"Tell me the typical dishes of Italy.";ok
+"Give me a list of popular foods in Greece.";ok
+"Which dishes are famous in Germany?";ok
+"What should I eat in France to taste the culture?";ok
+"What local food is a must ?";dove?
+"Name a traditional dessert from France.";ok
+"What is the national dish?";dove
+"Any signature meals I should try in Lubiana?";ok e controllo errori
+"What do people usually eat in Turkey?";ok
+"What’s the most typical breakfast?";dove
+"Can you list traditional Portuguese dishes?";ok
+"What is the best thing to eat in Spain?";ok
+"What's the weather forecast for next week?";dove
+"Can you tell me tomorrow's weather?";dove?
+"Is it going to rain in the next few days?";dove
+"Give me the future weather outlook.";dove
+"What will the temperature be this weekend?";dove
+"What’s the forecast for this week in Paris?";ok
+"Will it be sunny in Berlin tomorrow?";ok
+"How warm will it be in Madrid next week?";ok
+"What’s the weather like in Rome for the weekend?";ok
+"Tell me the weather for tomorrow in London.";ok
+"Will there be snow in Prague this week?";ok
+"How hot is it expected to be in Athens?";quando
+"Can you give me a weather update for Zurich?";quando
+"What’s the temperature forecast for Vienna?";quando
+"What are the flight times to Berlin?";quando e manca la seconda city
+"Tell me the transport options to get to Paris.";seconda city e quando
+"How can I travel to Rome by train?";da dove
+"What’s the next train to Florence?";da dove
+"Give me information on trains from Berlin to Prague.";qaundo
+"What time is the next bus from Rome to Barcelona?";ok
+"How can I get to Venice from Milan by train?";ok
+"What’s the schedule for flights to Zurich?";second city
+"When is the next bus from Barcelona to Lisbon for tomorrow?";ok
+"Tell me about train services from Paris to Brussels for friday.";ok
+"What are the flight times from Milan to Rome?";quando
