@@ -140,17 +140,35 @@ The system constructs a **graph of places to visit**:
 
 ## 🔍 Route Optimization
 
-The route is selected using a **minimum-cost algorithm**, which balances:
+This project implements a **minimum-cost algorithm** for optimizing sightseeing routes, with the goal of providing an efficient and enjoyable itinerary. It balances factors such as the beauty of the place, walking distance, and visit duration to create an ideal sightseeing plan.
 
-- 🎨 Beauty of the place (highly weighted)
-- 🚶 Walking distance (moderately weighted)
-- ⌛ Visit duration (low or no weight)
+## Features
 
-It assumes the user has **8 hours per day** for sightseeing, and ensures the full itinerary respects the time constraints (e.g., 3 days × 8h = 24h).
+- 🎨 **Beauty of the place** (highly weighted)
+- 🚶 **Walking distance** (moderately weighted)
+- ⌛ **Visit duration** (low or no weight)
+- ✅ **Google Maps availability data**: Includes only locations that are open on the selected days and excludes temporarily closed or under renovation places.
+- **8 hours per day** of sightseeing time, ensuring the itinerary respects the total time available (e.g., 3 days × 8 hours = 24 hours).
 
-The system also uses **Google Maps availability data** to:
-- ✅ Include only locations that are open on the selected days
-- ❌ Exclude places temporarily closed or under renovation
+## Supported Cities
+
+Currently, the route optimization feature supports the following cities:
+
+- Rome
+- Ljubljana
+- Prague
+- Vienna
+- Florence
+- Naples
+- Maribor
+- Paris
+- Valencia
+- Barcelona
+- Madrid
+
+### Future Expansion
+
+We plan to extend the list of supported cities in the future. The dataset for additional cities has already been downloaded but requires manual formatting to meet the model's specifications.
 
 ---
 
