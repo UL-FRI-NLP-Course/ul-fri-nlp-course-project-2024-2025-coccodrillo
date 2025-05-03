@@ -232,5 +232,40 @@ def output_id6(diz):
 
 
 
-def output_id7(diz):
-    return diz
+
+def is_valid_trip(entry):
+    return (
+        isinstance(entry.get('departure'), str) and entry['departure'].startswith("Departs at") and
+        isinstance(entry.get('arrive'), str) and entry['arrive'].startswith("Arrives at")
+    )
+
+def output_id7(data):
+    result = ""
+
+    for transport, directions in data.items():
+        result += f"\n🚍🚆 {transport.upper()}\n"
+
+        for direction, trips in directions.items():
+            result += f"\n  {'➡️ Outbound' if direction == 'andata' else '⬅️ Return'}:\n"
+            valid_found = False
+
+            for trip in trips:
+                if not is_valid_trip(trip):
+                    continue  # Skip if fields are not properly formatted
+
+                valid_found = True
+                result += f"    🕒 Departure: {trip['departure']}\n"
+                result += f"    🛬 Arrival: {trip['arrive']}\n"
+                result += f"    ⏱️ Duration: {trip.get('duration', 'N/A')}\n"
+
+                if 'std_class' in trip:
+                    result += f"    💺 Standard: {trip['std_class']}\n"
+                if 'first_class' in trip:
+                    result += f"    🥂 First class: {trip['first_class']}\n"
+                result += "    ─────────────────────────────\n"
+
+            if not valid_found:
+                result += "    ⚠️ No valid trips found.\n"
+
+    return result
+
