@@ -309,10 +309,6 @@ While the system is robust and flexible, it has some technical limitations that 
 - The system splits texts into **individual sentences**, but sometimes **even a single sentence is too long** to be translated correctly.
 - In these cases, the result is provided in the original language.
 
-### 🎫 Travel Ticket Data
-
-- Some search results (e.g., flights or trains) may contain **incorrect information**.
-
 ---
 
 ## 📌 Examples (Testing 01/05/2025)
