@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import pyautogui
 
 # Funzione per il multi-scale template matching
 def multi_scale_template_matching(large_img, template, scales, method=cv2.TM_SQDIFF_NORMED):
