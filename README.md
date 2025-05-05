@@ -265,7 +265,7 @@ The user can search for events specifying:
 - Artist
 - Music genre
 
-The system connects to public APIs (e.g., **Bandsintown**) to show updated events.
+The system connects to public website (e.g., **Bandsintown**) to show updated events.
 
 ---
 
