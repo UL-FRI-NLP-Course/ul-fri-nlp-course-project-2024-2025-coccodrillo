@@ -323,6 +323,18 @@ While the system is robust and flexible, it has some technical limitations that 
 
 ---
 
+
+### **User:**  
+*Can you recommend some places to visit in Valencia for 3 days?*  
+
+**Output**  
+<p align="center">
+  <img src="images/valencia_places.png" width="85%" alt="Food in rome">
+</p>
+
+---
+
+
 ### **User:**  
 *I would like to go in Rome for 3 days, can you reccomend for me the best things to visit?  Start to Termini Station*  
 
