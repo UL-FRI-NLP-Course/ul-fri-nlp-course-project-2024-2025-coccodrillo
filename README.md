@@ -40,8 +40,27 @@ The system recognizes 8 main intents:
 
 ## 📂 How to Run the Project
 
-To run the project, execute the `run.py` file from the main project directory. You can do this using the command:
+### 1. Install Dependencies
 
+To install all the necessary libraries, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+### 2. Install Chrome Driver
+
+This project uses Chrome for browser automation and requires ChromeDriver to be installed.
+
+- Download the appropriate version of ChromeDriver for your operating system (Windows, macOS, or Linux).
+- Make sure it matches your installed version of Google Chrome.
+- Place the chromedriver executable inside the bin/ directory of the project.
+
+🛠 Tip: Make sure chromedriver is executable 
+       (you may need to run: chmod +x chromedriver on Unix systems).
+       
+### 3. Run 
+
+To run the project, execute the `run.py` file from the main project directory. You can do this using the command:
 ```bash
 python run.py
 ```
