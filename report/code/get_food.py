@@ -1,7 +1,6 @@
 from typical_food import get_nation
-import translate
-#from typical_food import summarize
 import random
+from pathlib import Path
 
 
 ls_particual_name = [
@@ -34,6 +33,8 @@ def convert_to_decimal(value):
         return 0
 
 def extract_info(city, file_path):
+
+    file_path =  Path(file_path)
     with open(file_path, 'r') as file:
         data = file.read()
     
@@ -120,3 +121,4 @@ def get_best_food(city):
     except:
         return []
     
+
