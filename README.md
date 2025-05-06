@@ -47,20 +47,22 @@ To install all the necessary libraries and download the required BERT models and
 ```bash
 python3 ./setup/to_install.py
 ```
-### 2. Install Chrome Driver
+2. Install ChromeDriver
 
-This project uses Chrome for browser automation and requires ChromeDriver to be installed.
+This project uses Chrome for browser automation, which requires ChromeDriver to be installed.
 
-- Download the appropriate version of ChromeDriver for your operating system (Windows, macOS, or Linux).
-- Make sure it matches your installed version of Google Chrome.
-- Place the chromedriver executable inside the bin/ directory of the project.
+    Download the appropriate version of ChromeDriver for your operating system (Windows, macOS, or Linux) from the following link: 
+    <a href="https://sites.google.com/chromium.org/driver/downloads" target="_blank">ChromeDriver</a>
+    
+    Make sure to select the correct version matching your installed version of Google Chrome.
 
-🛠 Tip: Make sure chromedriver is executable 
-       (you may need to run: chmod +x chromedriver on Unix systems).
-       
-### 3. Run 
+    Place the chromedriver executable in the bin/ directory of the project:
 
-To run the project, execute the `run.py` file from the main project directory. You can do this using the command:
+        On Linux and macOS, ensure it has executable permissions (chmod +x chromedriver).
+
+        On Windows, make sure the file has a .exe extension.
+
+🛠 Tip: On Unix-based systems, you might need to run:
 ```bash
 python run.py
 ```
