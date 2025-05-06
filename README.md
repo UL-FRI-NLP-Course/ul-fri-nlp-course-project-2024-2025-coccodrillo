@@ -1,9 +1,9 @@
 
-# 🐊 NLP Project: `crocodile`
+# 🐊 NLP Project: `coccodrillo`
 
 ## Description
 
-**Crocodile** is an intelligent natural language assistant. It is capable of interpreting complex requests regarding travel, weather, restaurants, events, safety, and much more. It uses advanced NLP models to understand user intents, extract relevant entities, correct errors, and generate structured responses.
+**Coccodrillo** is an intelligent natural language assistant. It is capable of interpreting complex requests regarding travel, weather, restaurants, events, safety, and much more. It uses advanced NLP models to understand user intents, extract relevant entities, correct errors, and generate structured responses.
 
 ---
 
