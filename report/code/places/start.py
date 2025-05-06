@@ -4,7 +4,7 @@ import csv
 def extract_name_from_file(file_path):
     """Estrai il nome dalla prima riga del file."""
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r',encoding='utf-8') as f:
             first_line = f.readline()
             # Estrai il nome dalla riga, assumendo che sia prima del carattere '|'
             name = first_line.split('|')[0].strip()  # strip rimuove eventuali spazi
