@@ -6,7 +6,7 @@ import requests
 
 
 def get_acronym_from_file(nation):
-    with open("dataset/countries.txt", "r") as file:
+    with open("dataset/countries.txt", "r",encoding='utf-8') as file:
         for line in file:
             country, acronym = line.strip().split('=')
             if country.lower() == nation.lower():
@@ -34,7 +34,7 @@ def download_acronimi():
     driver.set_window_size(1920, 1080)
     driver.get(url)
     time.sleep(2)
-    with open("nations.txt", "w") as file:
+    with open("nations.txt", "w",encoding='utf-8') as file:
         while True: 
             flags = driver.find_elements(By.CSS_SELECTOR, "a.cursor-pointer")
             for index in range(len(flags)):
@@ -51,5 +51,6 @@ def download_acronimi():
                 except Exception as e:
                     print(f" Error {country_name}: {e}")
             break  
+
 
 
