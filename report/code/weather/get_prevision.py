@@ -132,7 +132,7 @@ def run(city):
     long_term_link = ""
     path_file = "weather.csv"
     if os.path.exists(path_file):
-        with open(path_file, "w") as fp:
+        with open(path_file, "w",encoding='utf-8') as fp:
             pass  
 
     analyze_url(url,headers,path_file)
