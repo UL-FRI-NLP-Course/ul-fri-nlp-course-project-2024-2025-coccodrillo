@@ -25,6 +25,9 @@ dt_query = [
 
 
 output_path = "./testing/real_result.txt"
+from pathlib import Path
+output_path = Path(output_path)
+
 fp = open(output_path,"a")
 
 for query in dt_query:
