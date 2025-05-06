@@ -42,10 +42,10 @@ The system recognizes 8 main intents:
 
 ### 1. Install Dependencies
 
-To install all the necessary libraries, run the following command:
+To install all the necessary libraries and download the required BERT models and spaCy language model, run the following commands:
 
 ```bash
-pip install -r requirements.txt
+python3 ./setup/to_install.py
 ```
 ### 2. Install Chrome Driver
 
