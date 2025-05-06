@@ -51,18 +51,26 @@ python3 ./setup/to_install.py
 
 This project uses Chrome for browser automation, which requires ChromeDriver to be installed.
 
-Download the appropriate version of ChromeDriver for your operating system (Windows, macOS, or Linux) from the following link: 
-    <a href="https://sites.google.com/chromium.org/driver/downloads" target="_blank">ChromeDriver</a>
-    
-Make sure to select the correct version matching your installed version of Google Chrome.
+You can download the appropriate version of ChromeDriver for your operating system (Windows, macOS, or Linux) from the following link:  
+👉 [ChromeDriver Downloads](https://sites.google.com/chromium.org/driver/downloads)
 
-Place the chromedriver executable in the bin/ directory of the project:
+> **Note:** For convenience, ChromeDriver executables for Linux and Windows are already included in the `./setup/driver` directory.
 
- -On Linux and macOS, ensure it has executable permissions (chmod +x chromedriver).
+#### ⚙️ Requirements
 
- -On Windows, make sure the file has a .exe extension.
+- Make sure to download the ChromeDriver version that matches your installed version of Google Chrome.
+- If you don’t have Google Chrome installed, you can download it here:  
+  👉 [Download Google Chrome](https://www.google.com/chrome/?brand=YTUH&ds_kid=43700078760035388&gclsrc=aw.ds&gad_source=1&gad_campaignid=20812632360&gclid=EAIaIQobChMIgLqwq8SOjQMV7ZxQBh2vcy87EAAYASAAEgJi8PD_BwE)
 
-🛠 Tip: On Unix-based systems, you might need to run:
+#### 🐧 On Linux:
+
+- Place the `chromedriver` executable inside the `bin/` directory.
+
+#### 🪟 On Windows:
+
+- Place the `chromedriver_win32` directory in the root of this project.
+- Ensure that the ChromeDriver file has a `.exe` extension (`chromedriver.exe`).
+
 
 ### 3. Run the Project
 
