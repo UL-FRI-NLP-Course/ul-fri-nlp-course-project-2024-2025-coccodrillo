@@ -6,18 +6,11 @@ from datetime import datetime
 import re
 import translate
 from dateparser import parse
+from pathlib import Path
 import re
 
 
 def get_data_from_time(df, start_time):
-    """
-    Funzione che filtra il DataFrame per restituire tutte le righe a partire da un orario specificato.
-    La ricerca dell'orario viene effettuata riga per riga e i dati vengono stampati solo una volta che l'orario di inizio è raggiunto.
-    
-    :param df: DataFrame contenente i dati meteo
-    :param start_time: Orario di inizio (formato 'HH:MM', ad esempio '20:00')
-    :return: DataFrame filtrato contenente solo i dati a partire da start_time
-    """
     # Converte la colonna 'Time' in formato datetime (solo l'orario, senza data)
     df['Time'] = pd.to_datetime(df['Time'], format='%H:%M').dt.strftime('%H:%M')
 
@@ -42,7 +35,7 @@ def clean_text(text):
 
 def get_parameters(hourly, day, filename="weather_forecast.csv"):
     headers = ["Time", "Temperatura", "Precipitazioni", "Wind"]
-    
+    filename = Path(filename)
     with open(filename, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         
@@ -233,4 +226,5 @@ def get_prevsioni_day_time(city,day,time):
     if len(data) == 0:
         return "Sorry, i cannot calculate this."
     return data
+
 
