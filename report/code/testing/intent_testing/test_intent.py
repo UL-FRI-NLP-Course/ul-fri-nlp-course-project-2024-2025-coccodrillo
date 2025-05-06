@@ -1,11 +1,14 @@
 import csv
 from collections import defaultdict
 import run
+from pathlib import Path
 
 
 # File di input
 input_file = './testing/intent_sentences.csv'
 output_file = './testing/intent_evaluation_output.txt'
+input_file = Path(input_file)
+output_file = Path(output_file)
 
 # Metriche
 total = 0
@@ -13,6 +16,9 @@ correct = 0
 confusion_matrix = defaultdict(int)
 header = 0
 errors = []  # Lista per memorizzare gli errori
+
+
+
 
 with open(input_file, newline='', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
