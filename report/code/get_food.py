@@ -35,7 +35,7 @@ def convert_to_decimal(value):
 def extract_info(city, file_path):
 
     file_path =  Path(file_path)
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r',encoding='utf-8') as file:
         data = file.read()
     
     # Dividi i dati in piatti
@@ -121,4 +121,5 @@ def get_best_food(city):
     except:
         return []
     
+
 
