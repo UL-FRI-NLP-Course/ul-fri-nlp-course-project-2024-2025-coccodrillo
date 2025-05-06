@@ -8,7 +8,7 @@ from transformers import pipeline, BartTokenizer
 
 
 libraries = [
-    'googletrans',
+    'googletrans==4.0.0-rc1',
     'pyPDF2',
     'numpy',
     'spacy',
