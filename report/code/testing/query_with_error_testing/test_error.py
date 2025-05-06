@@ -1,9 +1,12 @@
 import csv
 import run
+from pathlib import Path
 
 # File di input
 input_file = './testing/dt_error.csv'
 output_file = './testing/error_evaluation_output.csv'
+input_file = Path(input_file)
+output_file = Path(output_file)
 
 with open(input_file, newline='', encoding='utf-8') as csvfile, \
      open(output_file, 'w', newline='', encoding='utf-8') as outfile:
