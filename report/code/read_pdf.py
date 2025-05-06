@@ -2,10 +2,12 @@ import PyPDF2
 import re
 from typical_food import summarize
 import translate
+from pathlib import Path
 
 def read(file_path):
     # Open the PDF file in read-binary mode
     txt = ""
+    file_path =  Path(file_path)
     with open(file_path, 'rb') as pdf:
         reader = PyPDF2.PdfReader(pdf)
         
@@ -92,5 +94,6 @@ def summerize(path):
     riassunto = summarize.summarize_text(total)
     riassunto = translate.get_translate(riassunto,"it","en")
     return (update,riassunto)
+
 
 
