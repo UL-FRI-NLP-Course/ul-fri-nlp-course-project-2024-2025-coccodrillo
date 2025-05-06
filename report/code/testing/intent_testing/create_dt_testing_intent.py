@@ -159,7 +159,10 @@ random.shuffle(all_sentences)
 dataset = all_sentences
 
 # 💾 Salva su CSV
-with open('./testing/intent_sentences.csv', 'w', newline='', encoding='utf-8') as csvfile:
+from pathlib import Path
+output_path = "./testing/intent_sentences.csv"
+output_path = Path(output_path)
+with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile, delimiter=';')
     for sentence, intent_index in dataset:
         writer.writerow([sentence, intent_index])
