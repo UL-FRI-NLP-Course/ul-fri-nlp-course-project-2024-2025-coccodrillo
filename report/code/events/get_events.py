@@ -163,7 +163,7 @@ def search_event_singer(start,end,city,singer,gen='all-genres'):
     run(start,end,city,gen)
     eventi_singer = []
     # Apriamo il file di testo
-    with open("events.txt", 'r') as file:
+    with open("events.txt", 'r',encoding='utf-8') as file:
         linee = file.readlines()
 
     for i in range(0, len(linee), 6):
@@ -206,4 +206,5 @@ def filter_city_period(city, city_period_list):
             result.append(record)  
 
     return result
+
 
