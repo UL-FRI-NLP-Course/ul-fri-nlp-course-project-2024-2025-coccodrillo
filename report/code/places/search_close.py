@@ -6,47 +6,28 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as ec
 import time
 from bs4 import BeautifulSoup
 import random
 import re
-import pyautogui
-from selenium.webdriver.common.by import By
-from screeninfo import get_monitors
-
-X_REF = 1015
-Y_REF = 870
-WIDTH = 1920
-HEIGHT= 1080
 
 
 
 
-def coockie(driver):
-
-        driver.maximize_window()
-        monitors = get_monitors()
-        monitor = monitors[0]
-        time.sleep(1)
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(1)
-        #pyautogui.moveTo(520, 826, duration=1.5)  # movimento lento
-        x = (X_REF * monitor.width)  / WIDTH
-        y = (Y_REF * monitor.height) / HEIGHT
-        pyautogui.moveTo(x, y, duration=1.5)  # movimento lento
-        pyautogui.click(button='left')
-        time.sleep(1)
-        #driver.minimize_window()
 
 
-def coockie2(driver):
-    try:
-        # Il pulsante di accettazione dei cookie ha una classe comune
-        accept_button = driver.find_element(By.CLASS_NAME, "UywwFc-RLmnJb")
-        accept_button.click()
-        print("Cookie accettati!")
-    except Exception as e:
-        print("Errore nell'accettare i cookie:", e)
+def cookie(driver):
+    driver.maximize_window()       # ingrandisce la finestra
+    WebDriverWait(driver, 10).until( # aspetta finche il bottone è cliccabile e poi lo clicca
+        ec.element_to_be_clickable(
+        (
+            By.XPATH,
+            '//*[@id="yDmH0d"]/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button'
+        )
+    )).click()
+
+
 
 
 def check_closed(driver):
@@ -85,8 +66,6 @@ def wait_for_details(driver):
 
 
 def run(name):
-
-
     options = Options()
     options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.5735.90 Safari/537.36")
     options.headless = False
@@ -94,7 +73,7 @@ def run(name):
     driver = webdriver.Chrome(service=service, options=options)
     driver.get("https://www.google.pl/maps/place/")
     time.sleep(random.uniform(1, 2))
-    coockie(driver)
+    cookie(driver)
     time.sleep(1)
     search_museum(name,driver)
     wait_for_details(driver)
@@ -114,7 +93,7 @@ def run_vector(places):
         driver = webdriver.Chrome(service=service, options=options)
         driver.get("https://www.google.pl/maps/place/")
         time.sleep(random.uniform(1, 2))
-        coockie(driver)
+        cookie(driver)
         for place in places:
             search_museum(place,driver)
             wait_for_details(driver)
@@ -122,4 +101,5 @@ def run_vector(places):
             vector.append((place,str(open)))
     
     return vector
+
 
