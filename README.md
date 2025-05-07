@@ -77,7 +77,7 @@ You can download the appropriate version of ChromeDriver for your operating syst
 To run the project, navigate to the report/code directory and execute the run.py script using the following command:
 ```bash
 cd report/code
-python run.py
+python3 run.py
 ```
 ## ⚙️ How It Works
 
