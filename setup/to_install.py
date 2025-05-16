@@ -1,10 +1,5 @@
 import subprocess
 import sys
-import nltk
-from transformers import BertTokenizer, BertForQuestionAnswering
-from sentence_transformers import SentenceTransformer
-import spacy
-from transformers import pipeline, BartTokenizer
 
 
 libraries = [
@@ -33,6 +28,12 @@ for library in libraries:
 
 print("\n✅ All libraries have been successfully installed.")
 
+import nltk
+from transformers import BertTokenizer, BertForQuestionAnswering
+from sentence_transformers import SentenceTransformer
+import spacy
+from transformers import pipeline, BartTokenizer
+
 subprocess.check_call([sys.executable,'-m','spacy','download','en_core_web_sm'])
 
 nltk.download('punkt')
@@ -42,3 +43,4 @@ nlp = spacy.load("en_core_web_sm")
 summarizer = pipeline('summarization', model='facebook/bart-large-cnn')
 tokenizer2 = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
 model2 = SentenceTransformer('all-MiniLM-L6-v2')
+
