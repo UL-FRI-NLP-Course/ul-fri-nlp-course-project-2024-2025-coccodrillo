@@ -17,7 +17,7 @@ libraries = [
     'opencv-python',
     'fuzzywuzzy',
     'dateparser',
-    'torch',
+    'torch==2.0.1',
     'geopy',
     'pyautogui',
     'scikit-learn',
