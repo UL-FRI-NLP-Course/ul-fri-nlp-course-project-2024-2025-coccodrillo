@@ -74,9 +74,9 @@ You can download the appropriate version of ChromeDriver for your operating syst
 
 ### 3. Run the Project
 
-To run the project, navigate to the report/code directory and execute the run.py script using the following command:
+To run the project, navigate to the src directory and execute the run.py script using the following command:
 ```bash
-cd report/code
+cd src
 python3 run.py
 ```
 ## ⚙️ How It Works
@@ -260,7 +260,7 @@ Below is the optimized travel route drawn on a map.
 Each segment is **color-coded** based on the order of visitation (earliest to latest).
 
 <p align="center">
-  <img src="example_path_rome.png" width="85%" alt="Optimized itinerary map for Rome">
+  <img src="./result/images/example_path_rome.png" width="85%" alt="Optimized itinerary map for Rome">
 </p>
 
 ---
@@ -351,7 +351,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/food_rome.png" width="85%" alt="Food in rome">
+  <img src="./result/images/food_rome.png" width="85%" alt="Food in rome">
 </p>
 
 ---
@@ -362,7 +362,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/valencia_places.png" width="85%" alt="Food in rome">
+  <img src="./result/images/valencia_places.png" width="85%" alt="Food in rome">
 </p>
 
 ---
@@ -373,7 +373,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/place_rome.png" width="85%" alt="Rome places to visit">
+  <img src="./result/images/place_rome.png" width="85%" alt="Rome places to visit">
 </p>
 
 ---
@@ -383,10 +383,10 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/news_france.png" width="85%" alt="News France doc1">
+  <img src="./result/images/news_france.png" width="85%" alt="News France doc1">
 </p>
 <p align="center">
-  <img src="images/news_france2.png" width="85%" alt="News France doc2">
+  <img src="./result/images/news_france2.png" width="85%" alt="News France doc2">
 </p>
 
 
@@ -397,7 +397,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/news_valencia.png" width="85%" alt="News Valencia">
+  <img src="./result/images/news_valencia.png" width="85%" alt="News Valencia">
 </p>
 
 ---
@@ -407,7 +407,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/events_lubiana.png" width="85%" alt="Events in Lubiana">
+  <img src="./result/images/events_lubiana.png" width="85%" alt="Events in Lubiana">
 </p>
 
 ---
@@ -417,7 +417,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/events_milan.png" width="85%" alt="Events in Milan">
+  <img src="./result/images/events_milan.png" width="85%" alt="Events in Milan">
 </p>
 
 ---
@@ -427,7 +427,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/restaurants_prague.png" width="85%" alt="Restaurants in Prague">
+  <img src="./result/images/restaurants_prague.png" width="85%" alt="Restaurants in Prague">
 </p>
 
 ---
@@ -437,10 +437,10 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/food_naples.png" width="85%" alt="Naples food">
+  <img src="./result/images/food_naples.png" width="85%" alt="Naples food">
 </p>
 <p align="center">
-  <img src="images/food_paris.png" width="85%" alt="Paris food">
+  <img src="./result/images/food_paris.png" width="85%" alt="Paris food">
 </p>
 
 
@@ -451,7 +451,7 @@ While the system is robust and flexible, it has some technical limitations that 
 
 **Output**  
 <p align="center">
-  <img src="images/temperature_berlin.png" width="85%" alt="Temperature Berlin">
+  <img src="./result/images/temperature_berlin.png" width="85%" alt="Temperature Berlin">
 </p>
 
 ---
