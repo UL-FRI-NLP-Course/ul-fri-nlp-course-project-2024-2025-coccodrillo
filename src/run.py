@@ -166,6 +166,7 @@ def get_intent0():
     for record in metadata:
         if record[0] not in cities:
             cities.append(record[0])
+            print("record : ",record)
             articles =get_news.run(record[0],"0")
             diz[record[0]] = articles
             nation = get_news.get_nat(record[0]).lower()
@@ -253,7 +254,12 @@ def main(stringa):
     #print(metadata)
     #print(idx_intent)
     diz = intent_mapping.get(idx_intent, get_intent2)()   #devo mettere un timeout anche qui
-    return text,diz,idx_intent
+    if diz :
+        return text,diz,idx_intent
+    else:
+        text = "Sorry, I cannot calculate this."
+        diz = {}
+        return text,diz,idx_intent
     print(text)
     print(diz)
 
