@@ -19,7 +19,7 @@ def get_paper(nation):
         url = f"https://www.viaggiaresicuri.it/schede_paese/pdf/{acronym}.pdf"
         response = requests.get(url)
         if response.status_code == 200:
-            with open(f"result/{nation}_paper.pdf", "wb") as file:
+            with open(f"{nation}_paper.pdf", "wb") as file:
                 file.write(response.content)
             return 1
         else:

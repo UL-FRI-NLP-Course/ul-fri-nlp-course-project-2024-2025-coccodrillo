@@ -1,3 +1,4 @@
+import os
 import get_intent
 import create_graph_place
 import query_bert
@@ -166,16 +167,25 @@ def get_intent0():
     for record in metadata:
         if record[0] not in cities:
             cities.append(record[0])
-            print("record : ",record)
-            articles =get_news.run(record[0],"0")
-            diz[record[0]] = articles
-            nation = get_news.get_nat(record[0]).lower()
+            
+            if record[0] == "United":
+                continue
+            elif record[0]== 'Kingdom':
+                articles = get_news.run('United Kingdom', "0")
+                diz['United Kingdom'] = articles
+                nation = get_news.get_nat('United Kingdom').lower()
+                print(nation)
+            else:
+                articles =get_news.run(record[0],"0")
+                diz[record[0]] = articles
+                nation = get_news.get_nat(record[0]).lower()
             if nation not in nat_visited:
                 nat_visited.add(nation)
                 s = get_news.get_paper(nation)
                 if s == 1:
-                    tupla = read_pdf.summerize("./result/"+nation+"_paper.pdf")
+                    tupla = read_pdf.summerize(nation+"_paper.pdf")
                     diz[nation+"_doc"] = tupla
+                    os.remove(nation+"_paper.pdf")
 
     return diz
 
@@ -245,6 +255,8 @@ def main(stringa):
     sentence = stringa
     global metadata
     metadata, idx_intent = get_intent.main(sentence)
+    print("Metadata:", metadata)
+    print("Intent Index:", idx_intent)
     #return idx_intent    #only for intent testing
     #if metadata == None:  #only for error testing
       #  return []         #only for error testing
