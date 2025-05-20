@@ -50,7 +50,7 @@ def get_parameters(hourly, day, filename="weather_forecast.csv"):
             prec_text = prec_elem.find('span').text.strip() if prec_elem.find('span') else "0 mm"
             vento_elem = forecast.find_all('td')[5]
             vento_info = "".join([char for char in vento_elem.text.strip().replace("\n", " ") if not char.isupper()])
-            parsed_date = parse(day, settings={'PREFER_DATES_FROM': 'future', 'DATE_ORDER': 'DMY'})
+            parsed_date = parse(day, settings={'PREFER_DATES_FROM': 'future', 'DATE_ORDER': 'DMY'}, languages=['fr', 'it', 'sl'])
             
             prec_text = clean_text(prec_text)
             vento_info = clean_text(vento_info)
@@ -62,10 +62,6 @@ def get_parameters(hourly, day, filename="weather_forecast.csv"):
             else:
                 writer.writerow([day, f"{ora}:00", f"{temp}˚C", "".join(re.findall(r"[a-zA-Z]+", prec_text)), "".join(re.findall(r"[a-zA-Z]+", vento_info))])
             
-
-
-
-
 
 
 def analyze_url(url, headers, filename="weather_forecast.csv"):
