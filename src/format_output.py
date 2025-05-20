@@ -5,7 +5,7 @@ from pandas import Timestamp
 
 def get(diz,id):
     if not diz:
-        return "No data available for this intent."
+        return "Sorry, there is no data available for this intent."
     elif id == 0:
         return output_id0(diz)
     elif id == 1:
@@ -163,15 +163,16 @@ def format_restaurant_data(city_data):
 
 def output_id4(diz):
     # Itera su tutte le città e stampa i dati
-    output = ""
-    for city, restaurants in diz.items():
-        output+=(f"🏙️ Restaurants in {city}:\n")
-        output+=("=" * 40)
-        output+="\n"
-        # Ordina i ristoranti per valutazione decrescente
-        sorted_restaurants = sorted(restaurants, key=lambda x: float(x['Reviews']), reverse=True)
-        output += format_restaurant_data(sorted_restaurants)
-        output+=("\n" + "=" * 40 + "\n\n")
+    output = "Sorry, I don't have any restaurant data available for this city."
+    if diz:
+        for city, restaurants in diz.items():
+            output=(f"🏙️ Restaurants in {city}:\n")
+            output+=("=" * 40)
+            output+="\n"
+            # Ordina i ristoranti per valutazione decrescente
+            sorted_restaurants = sorted(restaurants, key=lambda x: float(x['Reviews']), reverse=True)
+            output += format_restaurant_data(sorted_restaurants)
+            output+=("\n" + "=" * 40 + "\n\n")
     return output
 
 

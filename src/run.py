@@ -120,8 +120,11 @@ def get_intent4():
     for record in metadata:
         if record[0] not in cities and record[0] != "":
             cities.append(record[0])
-            diz[record[0]] = resturants.get_restaurants(record[0])   
-    return diz
+            diz[record[0]] = resturants.get_restaurants(record[0])
+    if not any(diz.values()):
+        return {}
+    else:   
+        return diz
 
 def get_intent5():
     diz = {}
@@ -266,7 +269,7 @@ def main(stringa):
     if diz :
         return text,diz,idx_intent
     else:
-        text = "Sorry, I cannot calculate this."
+        text = ""
         diz = {}
         return text,diz,idx_intent
     print(text)
