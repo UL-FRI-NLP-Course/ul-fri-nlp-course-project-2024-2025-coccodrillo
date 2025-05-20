@@ -4,21 +4,23 @@ from pandas import Timestamp
 
 
 def get(diz,id):
-    if id == 0:
+    if not diz:
+        return "No data available for this intent."
+    elif id == 0:
         return output_id0(diz)
-    if id == 1:
+    elif id == 1:
         return output_id1(diz)
-    if id == 2:
+    elif id == 2:
         return output_id2(diz)
-    if id == 3:
+    elif id == 3:
         return output_id3(diz)
-    if id == 4:
+    elif id == 4:
         return output_id4(diz)
-    if id == 5:
+    elif id == 5:
         return output_id5(diz)
-    if id == 6:
+    elif id == 6:
         return output_id6(diz)
-    if id == 7:
+    elif id == 7:
         return output_id7(diz)
 
 
