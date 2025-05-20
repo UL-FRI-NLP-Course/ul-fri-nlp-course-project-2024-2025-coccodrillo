@@ -103,22 +103,25 @@ def get_best_food(city):
         if len(dishes_info_location) <= 3:
             n = len(dishes_info_location)
         else:
-            n = random.randint(3,len(dishes_info_location)) 
-
+            n = random.randint(3,15)
         if len(dishes_info_no_location) <= 3:
             n2 = len(dishes_info_no_location)
         else:
-            n2 = random.randint(3,len(dishes_info_no_location)) 
-
-        selected_dishes_location = random.choices(dishes_info_location, weights=weights, k=n)
-        selected_dishes_no_location = random.choices(dishes_info_no_location, weights=weights2, k=n2)
-        if len(selected_dishes_location) < 3: 
+            n2 = random.randint(3,15)
+        selected_dishes_location = []
+        selected_dishes_no_location = []
+        if dishes_info_location:
+            selected_dishes_location = random.choices(dishes_info_location, weights=weights, k=n)
+        if dishes_info_no_location:
+            selected_dishes_no_location = random.choices(dishes_info_no_location, weights=weights2, k=n2)
+        if len(selected_dishes_location) < 3:
             total = selected_dishes_location
             total.extend(selected_dishes_no_location)
             return total
         else:
             return selected_dishes_location
     except:
+        print("Error: File not found or empty")
         return []
     
 

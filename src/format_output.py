@@ -126,15 +126,36 @@ def format_event_data(city, city_data):
 def output_id3(diz):
    # Itera su tutte le città e stampa gli eventi
     output = ""
+    """
     for city, events_list in diz.items():
         # Appiattisci la lista, poiché gli eventi sono dentro una lista di lista
         events = [event for sublist in events_list for event in sublist]
         
         # Ordina gli eventi per data
         sorted_events = sorted(events, key=lambda x: x['Date_and_Time'])
+    """
+    # Ensure that the data structure is correct
+    for city, events in diz.items():
+        if not isinstance(events, list):
+            print(f"Error: Expected a list of events for {city}, but got {type(events)}")
+            continue
+
+        for event in events:
+            if not isinstance(event, dict):
+                print(f"Error: Expected a dictionary for an event in {city}, but got {type(event)}")
+                continue
+
+            if 'Date_and_Time' not in event:
+                print(f"Error: 'Date_and_Time' key not found in event: {event}")
+                continue
+
+    # Sort the events by 'Date_and_Time'
+    sorted_events = {}
+    for city, events in diz.items():
+        sorted_events[city] = sorted(events, key=lambda x: x['Date_and_Time'])
         
         # Stampa i dati formattati
-        output += format_event_data(city, sorted_events)
+        output += format_event_data(city, sorted_events[city])
         output +="\n"
         output+=("\n" + "=" * 40 + "\n")
         output+="\n"

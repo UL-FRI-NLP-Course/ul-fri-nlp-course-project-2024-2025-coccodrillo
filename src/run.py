@@ -17,6 +17,7 @@ from places import search_close
 from places import get_geo
 import create_text
 import format_output
+import random
 
 
 sentence = ""
@@ -111,7 +112,13 @@ def get_intent3():
             else:
                 events = get_events.search_event_singer(start,end,city,singer,gen)
                 diz[city].append(events)
-    return diz
+    limited_diz = {}
+    for city, events_lists in diz.items():
+        if events_lists and isinstance(events_lists[0], list):
+            limited_diz[city] = random.sample(events_lists[0], min(15, len(events_lists[0])))
+        else:
+            limited_diz[city] = []
+    return limited_diz
 
 
 def get_intent4():
@@ -123,8 +130,9 @@ def get_intent4():
             diz[record[0]] = resturants.get_restaurants(record[0])
     if not any(diz.values()):
         return {}
-    else:   
-        return diz
+    else:
+        limited_diz = {key: random.sample(value, min(15, len(value))) for key, value in diz.items()}
+        return limited_diz
 
 def get_intent5():
     diz = {}
@@ -280,7 +288,7 @@ def main(stringa):
 
 stringa = input("Insert your sentence: ")
 text,diz,id = main(stringa)
-print(text)
+print("\r\n", text)
 final_output = format_output.get(diz,int(id))
 print(final_output)
 
