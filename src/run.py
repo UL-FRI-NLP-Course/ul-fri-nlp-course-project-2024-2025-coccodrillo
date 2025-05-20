@@ -174,7 +174,6 @@ def get_intent0():
                 articles = get_news.run('United Kingdom', "0")
                 diz['United Kingdom'] = articles
                 nation = get_news.get_nat('United Kingdom').lower()
-                print(nation)
             else:
                 articles =get_news.run(record[0],"0")
                 diz[record[0]] = articles
@@ -255,8 +254,6 @@ def main(stringa):
     sentence = stringa
     global metadata
     metadata, idx_intent = get_intent.main(sentence)
-    print("Metadata:", metadata)
-    print("Intent Index:", idx_intent)
     #return idx_intent    #only for intent testing
     #if metadata == None:  #only for error testing
       #  return []         #only for error testing

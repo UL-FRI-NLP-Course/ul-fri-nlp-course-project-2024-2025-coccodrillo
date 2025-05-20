@@ -163,8 +163,16 @@ def search_event_singer(start,end,city,singer,gen='all-genres'):
     run(start,end,city,gen)
     eventi_singer = []
     # Apriamo il file di testo
-    with open("events.txt", 'r',encoding='utf-8') as file:
-        linee = file.readlines()
+    try:
+        with open("events.txt", 'r',encoding='utf-8') as file:
+            linee = file.readlines()
+    except UnicodeDecodeError:
+        try:
+            with open("events.txt", "r", encoding="iso-8859-1") as file:
+                linee = file.readlines()
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return []
 
     for i in range(0, len(linee), 6):
         cantante = linee[i].strip().split(":")[1]  # La riga sopra il nome dell'evento
