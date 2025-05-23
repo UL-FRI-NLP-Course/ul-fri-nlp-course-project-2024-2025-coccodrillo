@@ -104,11 +104,14 @@ def get_events(html,driver):
 
 
 def get_tables(response):
-    soup = BeautifulSoup(response.text, 'lxml')
-    table = soup.find_all('div', class_='MtafMVpvYyCTdxtbFglz')
-    table = str(table)
-    html = table[1:-1]
-    return html
+    try:
+        soup = BeautifulSoup(response.text, 'lxml')
+        table = soup.find_all('div', class_='MtafMVpvYyCTdxtbFglz')
+        table = str(table)
+        html = table[1:-1]
+        return html
+    except:
+        return []
 
 gen = [ 
     'alternative',
@@ -141,7 +144,10 @@ def run(start,end,city,genres):
     driver.minimize_window()
     pagina_html = naviga(web,city,start,end,genres,driver)
     table = get_tables(pagina_html)
-    events = get_events(table,driver)
+    if table == []:
+        events = ""
+    else:
+        events = get_events(table,driver)
     fp = open("events.txt","w")
     fp.write(events)
     fp.close()
@@ -162,17 +168,8 @@ def search_event_singer(start,end,city,singer,gen='all-genres'):
     
     run(start,end,city,gen)
     eventi_singer = []
-    # Apriamo il file di testo
-    try:
-        with open("events.txt", 'r',encoding='utf-8') as file:
-            linee = file.readlines()
-    except UnicodeDecodeError:
-        try:
-            with open("events.txt", "r", encoding="iso-8859-1") as file:
-                linee = file.readlines()
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            return []
+    with open("events.txt", "r", encoding="utf-8", errors="ignore") as file:
+        linee = file.readlines()
 
     for i in range(0, len(linee), 6):
         cantante = linee[i].strip().split(":")[1]  # La riga sopra il nome dell'evento
@@ -214,5 +211,7 @@ def filter_city_period(city, city_period_list):
             result.append(record)  
 
     return result
+
+
 
 
