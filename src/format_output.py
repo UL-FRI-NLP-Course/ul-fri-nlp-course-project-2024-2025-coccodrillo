@@ -4,50 +4,51 @@ from pandas import Timestamp
 
 
 def get(diz,id):
-    if not diz:
-        return "Sorry, there is no data available for this intent."
-    elif id == 0:
+    if id == 0:
         return output_id0(diz)
-    elif id == 1:
+    if id == 1:
         return output_id1(diz)
-    elif id == 2:
+    if id == 2:
         return output_id2(diz)
-    elif id == 3:
+    if id == 3:
         return output_id3(diz)
-    elif id == 4:
+    if id == 4:
         return output_id4(diz)
-    elif id == 5:
+    if id == 5:
         return output_id5(diz)
-    elif id == 6:
+    if id == 6:
         return output_id6(diz)
-    elif id == 7:
+    if id == 7:
         return output_id7(diz)
 
 
 
 
 def output_id0(diz):
-    # Loop through each country and its associated data
-    output = ""
-    for country, data in diz.items():
-        if "_doc" not in country:
-            output += (f"🌍 *{country}*:\n" + "-" * 40)
-            output +="\n"
-            
-            # Display the articles or news data
-            for entry in data:
-                entry = entry.replace('\n', ' ').strip()
-                entry = re.sub(r'\s+', ' ', entry).strip()
-                output+=(f"📰 {entry}\n\n")
+    try:
+        # Loop through each country and its associated data
+        output = ""
+        for country, data in diz.items():
+            if "_doc" not in country:
+                output += (f"🌍 *{country}*:\n" + "-" * 40)
+                output +="\n"
+                
+                # Display the articles or news data
+                for entry in data:
+                    entry = entry.replace('\n', ' ').strip()
+                    entry = re.sub(r'\s+', ' ', entry).strip()
+                    output+=(f"📰 {entry}\n\n")
 
-            # Check if a document related to the country exists dynamically
-            doc_key = f'{country.lower()}_doc'  # Build the doc key dynamically, e.g., 'france_doc', 'spain_doc'
-            if doc_key in diz:
-                doc_date, doc_content = diz[doc_key]
-                output+=(f"📅 *Document Date*: {doc_date}\n")
-                output+=(f"📄 *Document Content*: {doc_content}\n" + "=" * 40)
-                output+="\n"
-    return output
+                # Check if a document related to the country exists dynamically
+                doc_key = f'{country.lower()}_doc'  # Build the doc key dynamically, e.g., 'france_doc', 'spain_doc'
+                if doc_key in diz:
+                    doc_date, doc_content = diz[doc_key]
+                    output+=(f"📅 *Document Date*: {doc_date}\n")
+                    output+=(f"📄 *Document Content*: {doc_content}\n" + "=" * 40)
+                    output+="\n"
+        return output
+    except:
+        return ""
 
 # Function to format and display the news data in a readable way
 def format_news_data(city, news_data):
@@ -72,32 +73,38 @@ def format_news_data(city, news_data):
     return output
 
 def output_id1(diz):
-    # Itera su tutte le città e stampa le notizie
-    output = ""
-    for city, news_list in diz.items():
-        output += format_news_data(city, news_list)
-        output+="\n"
-        output+=("\n" + "=" * 40 + "\n\n")
-    return output
-
+    try:
+        # Itera su tutte le città e stampa le notizie
+        output = ""
+        for city, news_list in diz.items():
+            output += format_news_data(city, news_list)
+            output+="\n"
+            output+=("\n" + "=" * 40 + "\n\n")
+        return output
+    except:
+        return ""
+    
 def output_id2(diz):
-    output = []
+    try:
+        output = []
 
-    for city, (places, duration) in diz.items():
-        rounded_duration = round(duration)  # Approximate to nearest hour
-        output.append(f"🗺️ Here's the itinerary for {city}:")
-        output.append(f"⏳ Total estimated time: {rounded_duration} hours\n")
-        output.append("📍 Places to visit:")
+        for city, (places, duration) in diz.items():
+            rounded_duration = round(duration)  # Approximate to nearest hour
+            output.append(f"🗺️ Here's the itinerary for {city}:")
+            output.append(f"⏳ Total estimated time: {rounded_duration} hours\n")
+            output.append("📍 Places to visit:")
 
-        for name, status in places:
-            if status == '1':
-                output.append(f"  ✅ {name}")
-            else:
-                output.append(f"  ❌ {name} (temporarily closed)")
+            for name, status in places:
+                if status == '1':
+                    output.append(f"  ✅ {name}")
+                else:
+                    output.append(f"  ❌ {name} (temporarily closed)")
 
-        output.append("")  # blank line between cities
+            output.append("")  # blank line between cities
 
-    return "\n".join(output)
+        return "\n".join(output)
+    except:
+        return ""
 
 
 
@@ -124,42 +131,24 @@ def format_event_data(city, city_data):
     return output
 
 def output_id3(diz):
-   # Itera su tutte le città e stampa gli eventi
-    output = ""
-    """
-    for city, events_list in diz.items():
-        # Appiattisci la lista, poiché gli eventi sono dentro una lista di lista
-        events = [event for sublist in events_list for event in sublist]
-        
-        # Ordina gli eventi per data
-        sorted_events = sorted(events, key=lambda x: x['Date_and_Time'])
-    """
-    # Ensure that the data structure is correct
-    for city, events in diz.items():
-        if not isinstance(events, list):
-            print(f"Error: Expected a list of events for {city}, but got {type(events)}")
-            continue
-
-        for event in events:
-            if not isinstance(event, dict):
-                print(f"Error: Expected a dictionary for an event in {city}, but got {type(event)}")
-                continue
-
-            if 'Date_and_Time' not in event:
-                print(f"Error: 'Date_and_Time' key not found in event: {event}")
-                continue
-
-    # Sort the events by 'Date_and_Time'
-    sorted_events = {}
-    for city, events in diz.items():
-        sorted_events[city] = sorted(events, key=lambda x: x['Date_and_Time'])
-        
-        # Stampa i dati formattati
-        output += format_event_data(city, sorted_events[city])
-        output +="\n"
-        output+=("\n" + "=" * 40 + "\n")
-        output+="\n"
-    return output
+    try:
+    # Itera su tutte le città e stampa gli eventi
+        output = ""
+        for city, events_list in diz.items():
+            # Appiattisci la lista, poiché gli eventi sono dentro una lista di lista
+            events = [event for sublist in events_list for event in sublist]
+            
+            # Ordina gli eventi per data
+            sorted_events = sorted(events, key=lambda x: x['Date_and_Time'])
+            
+            # Stampa i dati formattati
+            output += format_event_data(city, sorted_events)
+            output +="\n"
+            output+=("\n" + "=" * 40 + "\n")
+            output+="\n"
+        return output
+    except:
+        return ""
 
 
 
@@ -183,18 +172,20 @@ def format_restaurant_data(city_data):
 
 
 def output_id4(diz):
-    # Itera su tutte le città e stampa i dati
-    output = "Sorry, I don't have any restaurant data available for this city."
-    if diz:
+    try:
+        # Itera su tutte le città e stampa i dati
+        output = ""
         for city, restaurants in diz.items():
-            output=(f"🏙️ Restaurants in {city}:\n")
+            output+=(f"🏙️ Restaurants in {city}:\n")
             output+=("=" * 40)
             output+="\n"
             # Ordina i ristoranti per valutazione decrescente
             sorted_restaurants = sorted(restaurants, key=lambda x: float(x['Reviews']), reverse=True)
             output += format_restaurant_data(sorted_restaurants)
             output+=("\n" + "=" * 40 + "\n\n")
-    return output
+        return output
+    except:
+        return ""
 
 
 
@@ -213,46 +204,52 @@ def deduplicate_food_items(food_list):
     return unique_items
 
 def output_id5(diz):
-   # Function to deduplicate items based on name and location
-    # Process and display data
-    output = ""
-    for city, items in diz.items():
-        output+=(f"\nTop food items in {city}:\n")
-        
-        unique_items = deduplicate_food_items(items)
-        sorted_items = sorted(unique_items, key=lambda x: x["review"], reverse=True)
-        
-        for item in sorted_items:
-            output+=(f"🍽️ *{item['name']}* ({item['food_type']})\n")
-            output+=(f"📝 {item['description']}\n")
-            output+=(f"⭐ Review: {item['review']:.1f}/5.0\n")
-            output+=("—" * 40)
-            output+="\n"
-    return output
+    try:
+    # Function to deduplicate items based on name and location
+        # Process and display data
+        output = ""
+        for city, items in diz.items():
+            output+=(f"\nTop food items in {city}:\n")
+            
+            unique_items = deduplicate_food_items(items)
+            sorted_items = sorted(unique_items, key=lambda x: x["review"], reverse=True)
+            
+            for item in sorted_items:
+                output+=(f"🍽️ *{item['name']}* ({item['food_type']})\n")
+                output+=(f"📝 {item['description']}\n")
+                output+=(f"⭐ Review: {item['review']:.1f}/5.0\n")
+                output+=("—" * 40)
+                output+="\n"
+        return output
+    except:
+        return ""
 
 
 
 
 def output_id6(diz):
-    output = ""
-    for city, forecasts in diz.items():
-        for forecast in forecasts:
-            # Estraggo la data (assumo che tutti i timestamp siano dello stesso giorno)
-            date_obj = forecast['Day'][0]
-            date_str = datetime.strftime(date_obj, "%A, %B %d, %Y")
+    try:
+        output = ""
+        for city, forecasts in diz.items():
+            for forecast in forecasts:
+                # Estraggo la data (assumo che tutti i timestamp siano dello stesso giorno)
+                date_obj = forecast['Day'][0]
+                date_str = datetime.strftime(date_obj, "%A, %B %d, %Y")
 
-            output += f"### 📍 **Weather Forecast for {city}**\n\n"
-            output += f"📅 **{date_str}**\n\n"
-            output += "```\n"
-            output += "|   Time   | Temperature |   Rain   |   Wind      |\n"
-            output += "|----------|-------------|----------|-----------  |\n"
+                output += f"### 📍 **Weather Forecast for {city}**\n\n"
+                output += f"📅 **{date_str}**\n\n"
+                output += "```\n"
+                output += "|   Time   | Temperature |   Rain   |   Wind      |\n"
+                output += "|----------|-------------|----------|-----------  |\n"
 
-            for time, temp, rain, wind in zip(forecast['Hour'], forecast['Temperatura'], forecast['Precipitazioni'], forecast['Wind']):
-                # Emoji meteo
-                rain_icon = "☀️" if rain == "absent" else "🌧️"
-                output += f"|  {time:<7} |   {temp:<9} | {rain_icon} {rain:<6} | 💨 {wind:<8} |\n"
-            output += "```\n\n"
-    return output
+                for time, temp, rain, wind in zip(forecast['Hour'], forecast['Temperatura'], forecast['Precipitazioni'], forecast['Wind']):
+                    # Emoji meteo
+                    rain_icon = "☀️" if rain == "absent" else "🌧️"
+                    output += f"|  {time:<7} |   {temp:<9} | {rain_icon} {rain:<6} | 💨 {wind:<8} |\n"
+                output += "```\n\n"
+        return output
+    except:
+        return ""
 
 
 
@@ -264,32 +261,35 @@ def is_valid_trip(entry):
     )
 
 def output_id7(data):
-    result = ""
+    try:
+        result = ""
+        for transport, directions in data.items():
+            result += f"\n🚍🚆 {transport.upper()}\n"
 
-    for transport, directions in data.items():
-        result += f"\n🚍🚆 {transport.upper()}\n"
+            for direction, trips in directions.items():
+                result += f"\n  {'➡️ Outbound' if direction == 'andata' else '⬅️ Return'}:\n"
+                valid_found = False
 
-        for direction, trips in directions.items():
-            result += f"\n  {'➡️ Outbound' if direction == 'andata' else '⬅️ Return'}:\n"
-            valid_found = False
+                for trip in trips:
+                    if not is_valid_trip(trip):
+                        continue  # Skip if fields are not properly formatted
 
-            for trip in trips:
-                if not is_valid_trip(trip):
-                    continue  # Skip if fields are not properly formatted
+                    valid_found = True
+                    result += f"    🕒 Departure: {trip['departure']}\n"
+                    result += f"    🛬 Arrival: {trip['arrive']}\n"
+                    result += f"    ⏱️ Duration: {trip.get('duration', 'N/A')}\n"
 
-                valid_found = True
-                result += f"    🕒 Departure: {trip['departure']}\n"
-                result += f"    🛬 Arrival: {trip['arrive']}\n"
-                result += f"    ⏱️ Duration: {trip.get('duration', 'N/A')}\n"
+                    if 'std_class' in trip:
+                        result += f"    💺 Standard: {trip['std_class']}\n"
+                    if 'first_class' in trip:
+                        result += f"    🥂 First class: {trip['first_class']}\n"
+                    result += "    ─────────────────────────────\n"
 
-                if 'std_class' in trip:
-                    result += f"    💺 Standard: {trip['std_class']}\n"
-                if 'first_class' in trip:
-                    result += f"    🥂 First class: {trip['first_class']}\n"
-                result += "    ─────────────────────────────\n"
+                if not valid_found:
+                    result += "    ⚠️ No valid trips found.\n"
 
-            if not valid_found:
-                result += "    ⚠️ No valid trips found.\n"
-
-    return result
+        return result
+    except:
+        return ""
+    
 
