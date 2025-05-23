@@ -109,7 +109,7 @@ def get_articles(places,intent):
         value = translations[intent][nation][0]
         origin = translations[intent][nation][1]
     else:
-        value = translations[intent]['United Kingdom']
+        value = translations[intent]['United Kingdom'][0]
         origin = "en"
     n = random.randint(4,8)
     value = value + " "+ places
@@ -181,5 +181,6 @@ def get_nat(city):
 def get_paper(nation):
     s = viaggiare_sicuri.get_paper(nation)
     return s
+
 
 
