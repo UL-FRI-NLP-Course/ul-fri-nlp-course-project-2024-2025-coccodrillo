@@ -51,7 +51,7 @@ This project requires **PyTorch 2.6.0**.
 - Python 3.11  
 - Python 3.13  
 
-> ⚠️ **Note**: Although a `requirements.txt` file is included (generated with `pip freeze > requirements.txt`),  
+> ⚠️ **Note**: Although a `./setup/requirements.txt` file is included (generated with `pip freeze > requirements.txt`),  
 > all necessary libraries with their correct versions should ideally be installed using the `to_install.py` script.
 
 ---
