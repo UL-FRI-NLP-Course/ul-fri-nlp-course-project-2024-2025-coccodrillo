@@ -40,6 +40,23 @@ The system recognizes 8 main intents:
 
 ## 📂 How to Run the Project
 
+### 0. Requirements
+
+This project requires **PyTorch 2.6.0**.
+
+✅ PyTorch 2.6.0 is compatible with the following Python versions:
+
+- Python 3.9  
+- Python 3.10  
+- Python 3.11  
+- Python 3.13  
+
+> ⚠️ **Note**: Although a `requirements.txt` file is included (generated with `pip freeze > requirements.txt`),  
+> all necessary libraries with their correct versions should ideally be installed using the `to_install.py` script.
+
+---
+
+
 ### 1. Install Dependencies
 
 To install all the necessary libraries and download the required BERT models and spaCy language model, run the following commands:
