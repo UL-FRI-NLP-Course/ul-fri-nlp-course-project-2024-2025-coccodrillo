@@ -1,5 +1,0 @@
-Train bus search: the website sometimes detects us as a bot and gets blocked.
-Article translations: if they are too long, it can't translate them; I’ve broken them into sentences and translate sentence by sentence, but sometimes even a single sentence is too long.
-Some tickets(output from travel) need to be checked because it doesn't find the correct items.
-The future ideas are:
-    Print with a good format for output.
